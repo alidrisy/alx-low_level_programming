@@ -2,9 +2,10 @@
 
 int main(void)
 /**
-* main_function
+*main=startpoint
+*description="print a string"
 */
 {
 puts("\"Programming is like building a multilingual puzzle");
-return(0);
+return (0);
 }
