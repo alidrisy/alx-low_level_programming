@@ -7,12 +7,12 @@
 * Return: Always 0.
 */
 int main(void)
-  {
+{
 char x;
 for (x = 'a'; x <= 'z'; x++)
 {
 x = tolower (x);
 putchar(x);
-  }
+}
 return (0);
 }
