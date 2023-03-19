@@ -11,12 +11,12 @@ int main(void)
 int number,number2;
 for (number = 0; number < 10; number++)
 {
-for (number2 = number+1; number2 < 10; number2++)
+for (number2 = number + 1; number2 < 10; number2++)
 {
 putchar((number % 10) + '0');
 putchar((number2 % 10) + '0');
 if (number == 8 && number2 == 9)
-
+continue;
 putchar(',');
 putchar(' ');
 }
