@@ -18,7 +18,7 @@ putchar((number % 10) + '0');
 putchar(' ');
 putchar((number2 / 10) + '0');
 putchar((number2 % 10) + '0');
-if (number == 8 && number2 == 9)
+if (number == 98 && number2 == 99)
 continue;
 putchar(',');
 putchar(' ');
