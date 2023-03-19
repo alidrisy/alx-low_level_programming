@@ -19,7 +19,7 @@ putchar((number % 10) + '0');
 putchar((number2 % 10) + '0');
 putchar((number3 % 10) + '0');
 
-if (number == 8 && number2 == 9)
+if (number == 7 && number2 == 8 && number3 == 9)
 continue;
 putchar(',');
 putchar(' ');
