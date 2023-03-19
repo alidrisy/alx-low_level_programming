@@ -13,11 +13,11 @@ for (number = 0; number < 98; number++)
 {
 for (number2 = number + 1; number2 < 99; number2++)
 {
+putchar((number / 10) + '0');
 putchar((number % 10) + '0');
-putchar((number / 10) + '0');
 putchar(' ');
-putchar((number2 % 10) + '0');
-putchar((number / 10) + '0');
+putchar((number2 / 10) + '0');
+putchar((number % 10) + '0');
 if (number == 8 && number2 == 9)
 continue;
 putchar(',');
