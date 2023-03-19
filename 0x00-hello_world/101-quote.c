@@ -4,7 +4,7 @@
 * main - writ string
 * just write contant
 *
-* RETURN: ALWAYS 1;
+* Return: ALways 1.
 */
 int main(void)
 {
