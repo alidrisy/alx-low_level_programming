@@ -1,4 +1,4 @@
-#include"main.h"
+#include "main.h"
 /**
 * main - print the alphabet
 * use the prototypes void print_alphabet(void);
