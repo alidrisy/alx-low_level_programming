@@ -5,7 +5,7 @@
 /**
 * print_alphabet - prints the alphabet in lowercase ten times, followed by a new line.
 */
-void print_alphabet_x10(void);
+void print_alphabet_x10(void)
 {
 char x, a = 0;
 while (a < 10)
