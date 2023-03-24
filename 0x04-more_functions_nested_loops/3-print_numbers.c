@@ -4,12 +4,13 @@
 * print_numbers - prints the numbers, from 0 to 9
 * add a new line 
 *
-* Return: 0
+* Return: The numbers since 0 up to 9
 */
 
 void print_numbers(void)
 {
-for (int x = 0; x <= 9; x++)
+  int x;
+for (x = 0; x <= 9; x++)
 {
 _putchar(x + '0');
 }
