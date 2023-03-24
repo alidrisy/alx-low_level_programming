@@ -3,14 +3,14 @@
 * main - hecks for uppercase character
 * Return: 0
 */
-void int _isupper(int c)
+int _isupper(int c)
 {
-if (isupper(c))
+if (c >= 65 && c <= 90)
 {
-printf("1");
+return (1);
 }
-else
-{
-printf("0");
+
+return (0);
 }
-}
+
+
