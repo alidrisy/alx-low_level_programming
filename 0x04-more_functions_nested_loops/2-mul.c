@@ -1,19 +1,19 @@
 #include "main.h"
 
 /**
-* _isdigit - Check if a letter is upper
+* mul - Check if a letter is upper
 * @c: The number to be checked
 *
-* Return: 1 for digit or 0 for any else
+* Return: a multiply b 
 */
 
-int _isdigit(int c)
+int mul(int a, int b)
 {
-if (c >= 48 && c <= 57)
-{
-return (1);
+return (a * b);
 }
 
-return (0);
 
-}
+
+
+
+
