@@ -1,7 +1,7 @@
 #include "main.h"
 /**
 * main - hecks for uppercase character
-* Return: 0
+* Return: 1 for upper letter or 0 for any else
 */
 int _isupper(int c)
 {
