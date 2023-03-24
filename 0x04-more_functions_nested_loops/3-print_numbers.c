@@ -9,10 +9,10 @@
 
 void print_numbers(void)
 {
-for (x = 0; x <= 10; x++)
+for (x = 0; x <= 9; x++)
 {
-_putchar((x % 10) + '0');
+_putchar(x + '0');
+}
 _putchar('\n');
 
-return (0);
 }
