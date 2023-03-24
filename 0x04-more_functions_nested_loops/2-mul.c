@@ -2,15 +2,18 @@
 
 /**
 * mul - Check if a letter is upper
-* @c: The number to be checked
+* @y: The second number to multiply with first number
+* @y: The second number to multiply with first number
 *
-* Return: a multiply b 
-*/
+* Return: The result of multiplication between x param and y param
 
 int mul(int a, int b)
 {
 return (a * b);
 }
+
+
+
 
 
 
