@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
-* mul - Check if a letter is upper
+* mul - Multiplies two integers
 * @y: The second number to multiply with first number
 * @y: The second number to multiply with first number
 *
