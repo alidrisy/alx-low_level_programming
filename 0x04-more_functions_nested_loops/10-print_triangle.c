@@ -4,7 +4,7 @@
 * print_triangle - print line.
 *@size: the number of # character.
 */
-void print_triangle(int size);
+void print_triangle(int size)
 {
 int x, c, z;
 if (size <= 0)
