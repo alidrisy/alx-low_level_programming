@@ -4,7 +4,7 @@
 * print_diagonal - print line.
 *@n: the number of \ character.
 */
-void print_diagonal(int n);
+void print_diagonal(int n)
 {
 int x, z;
 if (n <= 0)
