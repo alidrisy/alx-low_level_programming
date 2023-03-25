@@ -1,9 +1,9 @@
 #include "main.h"
 
 /**
-* print_diagonal - print line.
+* print_line - print line.
 */
-void print_diagonal(int n)
+void print_line(int n)
 {
 int x;
 if (n > 0)
