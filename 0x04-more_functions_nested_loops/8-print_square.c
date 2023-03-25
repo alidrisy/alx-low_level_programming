@@ -13,11 +13,11 @@ _putchar('\n');
 }
 else
 {
-for (x = 0; x <= size; x++)
+for (x = 0; x < size; x++)
 {
 if (x >= 0)
 {
-for (z = 0; z <= size; z++)
+for (z = 0; z < size; z++)
 _putchar('#');
 }
 
