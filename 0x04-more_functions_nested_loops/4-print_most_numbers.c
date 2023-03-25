@@ -12,9 +12,9 @@ int number;
 for (number = 48; number < 58; number++)
 {
 if (number != 50 && number != 52)
-_putchar(number + '0');
+putchar(number + '0');
 }
 
-_putchar('\n');
+putchar('\n');
   return (0);
 }
