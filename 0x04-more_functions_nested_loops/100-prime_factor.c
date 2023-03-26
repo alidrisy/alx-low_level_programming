@@ -9,7 +9,7 @@ int main(void)
 {
 long int n;
 n = 612852475143;
-long int x=2, z=0, m;
+long int m, x=2;
 while (n !=0)
 {
 if (n % x !=0)
