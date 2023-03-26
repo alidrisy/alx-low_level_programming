@@ -6,6 +6,7 @@
 * Return: Always 0.
 */
 int main(void)
+{
 long int n;
 n = 612852475143;
 long int x = 2, z = 0, m;
