@@ -15,7 +15,7 @@ else
 {
 for (x = 0; x < size; x++)
 {
-for (c = size - x; c > 0; c--)
+for (c = size - x; c > 1; c--)
 _putchar(' ');
 if (x >= 0)
 {
