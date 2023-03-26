@@ -7,25 +7,27 @@
 */
 int main(void)
 {
-long n;
+long n, x;
 n = 612852475143;
-long m;
-long x=2;
-while (n !=0)
+while (x < (n % 2))
 {
-if (n % x !=0)
-x = x + 1;
-else 
+if (n / 2 == 0)
 {
-m = n; 
-n = n / x;
-if (n == 0)
+n /= 2;
+continue;
+}
+for (x = 3; x < (n / 2); x += 2)
 {
-printf("%ld is the largest prime factor !", m);
+if (n % x == 0)
 
-break;
+n /= x;
 }
 }
-}
+printf("%ld\n", n);
 return (0);
 }
+
+
+
+
+
