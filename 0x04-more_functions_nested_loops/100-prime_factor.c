@@ -7,10 +7,10 @@
 */
 int main(void)
 {
-long int n;
+long n;
 n = 612852475143;
-long int m;
-long int x=2;
+long m;
+long x=2;
 while (n !=0)
 {
 if (n % x !=0)
