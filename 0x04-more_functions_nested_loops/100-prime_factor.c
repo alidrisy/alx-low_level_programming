@@ -9,7 +9,7 @@ int main(void)
 {
 long int n;
 n = 612852475143;
-long int x = 2, z = 0, m;
+long int x=2, z=0, m;
 while (n !=0)
 {
 if (n % x !=0)
@@ -20,7 +20,7 @@ m = n;
 n = n / x;
 if (n == 0)
 {
-printf("%d is the largest prime factor !", m);
+printf("%ld is the largest prime factor !", m);
 z = 1;
 break;
 }
