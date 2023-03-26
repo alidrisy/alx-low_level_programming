@@ -12,7 +12,7 @@ if (_islower(c))
 _putchar('1');
 }
 else
-{
+
 _putchar('0');
-}
+
 }
