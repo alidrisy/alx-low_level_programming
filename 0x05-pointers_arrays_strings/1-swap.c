@@ -2,13 +2,16 @@
 
 /**
 * swap_int - swaps the values of two integers.
-* @a: is the verst integer.
-* @b: is rhe second integer.
+* @a: is the first integer to swap
+* @b: is rhe second integer to swap
+*
+* Return: void
 */
 
 void swap_int(int *a, int *b)
 {
-int x = *a;
+int x;
+x = *a;
 *a = *b;
 *b = x;
 }
