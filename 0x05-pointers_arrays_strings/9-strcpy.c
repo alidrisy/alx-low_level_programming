@@ -4,7 +4,7 @@
 * @dest: a pointer 
 * @src: second pointer
 * Return: a value of variable @dest
-*)
+*/
 void print_array(int *a, int n)
 {
 int x;
