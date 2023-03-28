@@ -12,7 +12,7 @@ while (s[c++])
 {
 x++;
 }
-for (c = x - 1; c >= (x/2); c--)
+for (c = x - 1; c >= (x / 2); c--)
 {
 z = s[c];
 s[c] = s[x - c - 1];
