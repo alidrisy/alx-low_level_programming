@@ -5,7 +5,7 @@
 * @src: second pointer
 * Return: a value of variable @dest
 */
-char *_strcpy(char *dest, const char *src)
+char *_strcpy(char *dest, char *src)
 {
 int x = 0;
 while (src[x])
@@ -13,5 +13,6 @@ while (src[x])
 dest[x] = src[x];
 x++;
 }
+dest[i++] = '\0';
 return (dest);
 }
