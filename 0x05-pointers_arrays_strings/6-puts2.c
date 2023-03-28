@@ -12,4 +12,5 @@ x++;
 }
 for(c = 0; c < x; c += 2)
 _putchar(str[c]);
+_putchar('\n');
 }
