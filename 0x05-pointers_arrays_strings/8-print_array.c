@@ -12,8 +12,8 @@ int x, c;
 for (x = 0; x < n; x++)
 {
 printf("%d", a[x]);
-for (c = 0; c < n; c++)
-if (c < x)
+for (c = 0; c < x; c++)
+
 printf(", ");
 }
 }
