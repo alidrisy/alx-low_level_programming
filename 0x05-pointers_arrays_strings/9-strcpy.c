@@ -5,7 +5,7 @@
 * @src: second pointer
 * Return: a value of variable @dest
 */
-void print_array(int *a, int n)
+char *_strcpy(char *dest, char *src)
 {
 int x;
 while(src[x])
@@ -13,5 +13,5 @@ while(src[x])
 dest[x] = src[x];
 x++;
 }
-return (src);
+return (dest);
 }
