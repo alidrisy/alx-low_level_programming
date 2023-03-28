@@ -7,5 +7,6 @@
 */
 void print_rev(char *s)
 {
-printf("%s\n", strsep(s));
+strrev(s);
+printf("%s\n", s);
 }
