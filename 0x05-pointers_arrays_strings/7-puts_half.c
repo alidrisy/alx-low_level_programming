@@ -11,6 +11,6 @@ while (str[x] != 0)
 x++;
 }
 for (c = (x / 2); c < x; c++)
-putchar(str[c]);
-putchar(n);
+_putchar(str[c]);
+_putchar(n);
 }
