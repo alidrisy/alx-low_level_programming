@@ -7,10 +7,10 @@
 
 int _strlen(char *s)
 {
-int x;
-for (; *s != '\0'; *s++)
+int x = 0;
+for (; *s != '\0'; s++)
 {
-c++;
+x++;
 }
-return (c);
+return (x);
 }
