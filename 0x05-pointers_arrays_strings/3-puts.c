@@ -1,15 +1,16 @@
 #include "main.h"
 /**
-* _strlen - returns the length of a string.
-* @s: is the string
-* Return: c
+* _puts - returns the length of a string.
+* @str: is the string
 */
-int _strlen(char *s)
+
+void _puts(char *str)
 {
-int x = 0;
-for (; *s != 0; s++)
-{
-x++;
+printf("%s", str);
 }
-return (x);
-}
+
+
+
+
+
+
