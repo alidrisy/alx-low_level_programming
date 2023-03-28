@@ -24,5 +24,5 @@ c = x / 2;
 
 for (; c < x; c++)
 _putchar(str[c]);
-_putchar(n);
+_putchar('\n');
 }
