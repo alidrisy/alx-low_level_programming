@@ -16,4 +16,5 @@ if (x == n - 1)
 continue;
 printf(", ");
 }
+printf("\n");
 }
