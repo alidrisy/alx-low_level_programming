@@ -13,7 +13,7 @@ while (dest[c] != '\0')
 {
 x++;
 }
-while (src != '\0')
+for (x = 0; src[x]; x++)
 {
 dest[c] = src[x];
 c++;
