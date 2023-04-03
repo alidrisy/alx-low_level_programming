@@ -10,9 +10,9 @@ char *_strchr(char *s, char c)
 int x;
 for (x >= c; s[x]; x++)
 {
-if (c != 0)
-return s[x];
+if (c != '\0')
+return (s);
 else
-return 0;
+return (\0);
 }
 }
