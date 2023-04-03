@@ -4,7 +4,7 @@
 /**
 * *_memcpy - copies memory area
 * @dest: memory area
-* @src: second memory area 
+* @src: second memory area
 * @n: int variable
 * Return: dest
 */
