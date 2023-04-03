@@ -1,8 +1,10 @@
 #include "main.h"
+#include <stdio.h>
+
 /**
 * *_memcpy - copies memory area
 * @dest: memory area
-* @str: second memory area 
+* @src: second memory area 
 * @n: int variable
 * Return: dest
 */
