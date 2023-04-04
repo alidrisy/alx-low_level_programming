@@ -8,14 +8,14 @@
 unsigned int _strspn(char *s, char *accept)
 {
 unsigned int x = 0, v;
-while (accept[x] != '\0')
+while (*(accept + x))
 {
 x++;
+v = 0;
+if (*(accept +1) == *(s + v))
 
-if (accept[x] != ' ' && accept[x] != ',')
-s[x] = accept[x];
 }
-for (v = 0; v <= s[x]; v++)
+
 return (v);
 }
 
