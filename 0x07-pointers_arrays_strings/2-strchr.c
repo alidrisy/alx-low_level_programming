@@ -16,9 +16,9 @@ s++;
 z++;
 }
 if (*s == c)
-{
+
 return (s + z);
-}
+
 else
 return (NULL);
 }
