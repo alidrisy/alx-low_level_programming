@@ -20,6 +20,6 @@ if (*s == c)
 return (s + z);
 }
 else
-return (0);
+return (NULL);
 }
 
