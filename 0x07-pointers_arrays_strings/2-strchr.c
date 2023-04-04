@@ -1,6 +1,6 @@
 #include "main.h"
 #include <stdio.h>
-#include <stddif.h>
+
 /**
 * *_strchr - locates a character in a string
 * @s: pointer char
@@ -23,5 +23,5 @@ return (s + x);
 }
 else
 {
-return NULL;
+return ('\0');
 }
