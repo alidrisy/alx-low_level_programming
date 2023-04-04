@@ -3,29 +3,29 @@
 * *_strpbrk - gets the length of a prefix substring.
 * @s: char pointer
 * @accept: char pointer
-* Return: s
+* Return: s or Null
 */
 char *_strpbrk(char *s, char *accept)
 {
-unsigned int x = 0, v;
+unsigned int x, v;
 
 for ( x = 0; s[x]; x++)
 {
-v = 0;
-while (accept[v] != '\0')
+
+for (v = 0; accept[v]; v++)
 {
-v++;
-}
 if (s[x] == accept[v])
 {
 break;
+}
+
 }
 if (accept[v] != '\0')
 {
 return (s + x);
 }
 }
-return (0);
+return ('\0');
 }
 
 
