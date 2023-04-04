@@ -18,12 +18,12 @@ if (*s == c)
 {
 return (s);
 }
-else if (*s != c)
-return ('\0');
 s++;
 }
 return ('\0');
 }
+
+
 
 
 
