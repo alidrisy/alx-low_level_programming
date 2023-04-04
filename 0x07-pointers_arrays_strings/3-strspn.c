@@ -12,8 +12,11 @@ while (*(s + x))
 {
 x++;
 v = 0;
-if (*(s + x) == *(accept + v))
+while (*(accept + v))
+
 v++;
+if (*(s + x) == *(accept + 1))
+return (x);
 }
 
 return (x);
