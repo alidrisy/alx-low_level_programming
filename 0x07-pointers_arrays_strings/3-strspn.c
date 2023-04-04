@@ -13,7 +13,7 @@ while (*(accept + x))
 x++;
 v = 0;
 if (*(accept +1) == *(s + v))
-return (v);
+v++;
 }
 
 return (v);
