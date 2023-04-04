@@ -11,6 +11,7 @@ unsigned int x;
 for (x = 0; accept[x] >= '\0'; x++)
 {
 if (accept[x] != ' ' && accept[x] != ',')
+x++;
 s[x] = accept[x];
 }
 return (x);
