@@ -3,7 +3,7 @@
 * _strspn - gets the length of a prefix substring.
 * @s: char pointer
 * @accept: char pointer
-* Return: c
+* Return: char with result
 */
 unsigned int _strspn(char *s, char *accept)
 {
@@ -28,4 +28,4 @@ return (c);
 
 
 
- 
+
