@@ -3,7 +3,7 @@
 * _strspn - gets the length of a prefix substring.
 * @s: char pointer
 * @accept: char pointer
-* Return: s
+* Return: v
 */
 unsigned int _strspn(char *s, char *accept)
 {
@@ -12,7 +12,7 @@ while (*(accept + x))
 {
 x++;
 v = 0;
-if (*(accept +1) == *(s + v))
+if (*(accept + x) == *(s + v))
 v++;
 }
 
