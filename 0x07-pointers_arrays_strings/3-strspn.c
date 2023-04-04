@@ -7,11 +7,11 @@
 */
 unsigned int _strspn(char *s, char *accept)
 {
-int x;
+unsigned int x;
 for (x = 0; accept[x] >= '\0'; x++)
 {
 if (accept[x] != ' ' && accept[x] != ',')
 s[x] = accept[x];
 }
-return (s);
+return (x);
 }
