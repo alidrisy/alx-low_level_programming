@@ -16,11 +16,11 @@ while (accept[v] != '\0')
 {
 
 if (s[x] == accept[v])
-c++;
 v++;
+for ( x = 0; s[x] >= '\0'; x++)
 }
 x++;
-v = 0;
+
 return (s + x);
 }
 return ('\0');
