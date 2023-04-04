@@ -7,7 +7,8 @@
 */
 unsigned int _strspn(char *s, char *accept)
 {
-unsigned int x = 0, v, c;
+int x = 0, v = 0;
+unsigned int c;
 while (s[x] != ' ' && s[x] != '\0')
 {
 x++;
