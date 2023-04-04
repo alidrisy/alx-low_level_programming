@@ -8,15 +8,15 @@
 unsigned int _strspn(char *s, char *accept)
 {
 unsigned int x = 0, v;
-while (*(accept + x))
+while (*(s + x))
 {
 x++;
 v = 0;
-if (*(accept + x) == *(s + v))
+if (*(s + x) == *(accept + v))
 v++;
 }
 
-return (v);
+return (x);
 }
 
 
