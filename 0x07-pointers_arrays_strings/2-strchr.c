@@ -3,7 +3,8 @@
 * *_strchr - locates a character in a string
 * @s: pointer char
 * @c: char variable
-* Return: character c in the string s, or NULL if the character is not found
+* Return: character c in the string s.
+* Return: NULL if the character is not found.
 */
 char *_strchr(char *s, char c)
 {
