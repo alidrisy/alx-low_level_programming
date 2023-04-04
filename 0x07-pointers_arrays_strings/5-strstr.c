@@ -20,7 +20,7 @@ break;
 }
 
 }
-if (accept[v] != '\0')
+if (haystack[v] != '\0')
 {
 return (needle + x);
 }
