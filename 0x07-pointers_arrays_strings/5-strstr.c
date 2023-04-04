@@ -1,20 +1,20 @@
 #include "main.h"
 /**
-* *_strpbrk - gets the length of a prefix substring.
-* @s: char pointer
-* @accept: char pointer
-* Return: s or Null
+* *_strstr - gets the length of a prefix substring.
+* @haystack: char pointer
+* @needle: char pointer
+* Return: needle or NULL
 */
-char *_strpbrk(char *s, char *accept)
+char *_strstr(char *haystack, char *needle)
 {
 unsigned int x, v;
 
-for (x = 0; s[x]; x++)
+for (x = 0; needle[x]; x++)
 {
 
-for (v = 0; accept[v]; v++)
+for (v = 0; haystack[v]; v++)
 {
-if (s[x] == accept[v])
+if (needle[x] == haystack[v])
 {
 break;
 }
@@ -22,7 +22,7 @@ break;
 }
 if (accept[v] != '\0')
 {
-return (s + x);
+return (needle + x);
 }
 }
 return ('\0');
