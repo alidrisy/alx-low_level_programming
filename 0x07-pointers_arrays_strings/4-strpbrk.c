@@ -15,9 +15,9 @@ v = 0;
 while (accept[v] != '\0')
 {
 v++;
+}
 if (s[x] == accept[v])
 
-}
 
 x++;
 
