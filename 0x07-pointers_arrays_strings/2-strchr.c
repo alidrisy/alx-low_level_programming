@@ -6,24 +6,26 @@
 * @s: pointer char
 * @c: char variable
 * Return: character c in the string s.
-* Return: NULL if the character is not found
+*
 */
 char *_strchr(char *s, char c)
 {
 
 
-while (*s != c)
+while (*s != '\0')
 {
-s++;
-
-}
 if (*s == c)
 {
 return (s);
 }
-else
-{
-return ('\0');
+s++;
 }
 return ('\0');
 }
+
+
+
+
+
+
+
