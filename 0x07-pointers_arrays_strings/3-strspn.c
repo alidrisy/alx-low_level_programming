@@ -19,8 +19,9 @@ if (s[x] == accept[v])
 c++;
 v++;
 }
-x++
+x++;
 v = 0;
+}
 return (x);
 }
 
