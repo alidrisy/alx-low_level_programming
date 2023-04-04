@@ -7,8 +7,8 @@
 */
 unsigned int _strspn(char *s, char *accept)
 {
-unsigned int x;
-for (x = 0; accept[x] >= '\0'; x++)
+unsigned int x = 0;
+while (accept[x] != '\0')
 {
 if (accept[x] != ' ' && accept[x] != ',')
 x++;
