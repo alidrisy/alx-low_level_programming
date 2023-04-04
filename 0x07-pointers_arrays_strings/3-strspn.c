@@ -11,10 +11,10 @@ int x = 0, v = 0;
 unsigned int c = 0;
 while (s[x] != ' ' && s[x] != '\0')
 {
-x++;
-while (accept[v])
+
+while (accept[v] != '\0')
 {
-v++;
+
 if (s[x] == accept[v])
 c++;
 v++;
