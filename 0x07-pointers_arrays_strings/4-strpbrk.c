@@ -9,7 +9,7 @@ char *_strpbrk(char *s, char *accept)
 {
 unsigned int x = 0, v;
 
-for ( x = 0; s[x] != '\0'; x++)
+for ( x = 0; s[x]; x++)
 {
 v = 0;
 while (accept[v] != '\0')
@@ -21,9 +21,11 @@ if (s[x] == accept[v])
 break;
 }
 if (accept[v] != '\0')
+{
 return (s + x);
 }
-return ('\0');
+}
+return (0);
 }
 
 
