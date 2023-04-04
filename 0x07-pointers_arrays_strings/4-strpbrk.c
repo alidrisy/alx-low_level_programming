@@ -21,7 +21,7 @@ v++;
 }
 x++;
 v = 0;
-return (s + c)
+return (s + c);
 }
 return ('\0');
 }
