@@ -10,8 +10,10 @@ unsigned int _strspn(char *s, char *accept)
 unsigned int x = 0, v, c;
 while (s[x] != ' ' && s[x] != '\0')
 {
+x++;
 while (accept[v])
 {
+v++;
 if (s[x] == accept[v])
 c++;
 v++;
