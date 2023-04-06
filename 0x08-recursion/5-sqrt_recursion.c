@@ -3,7 +3,7 @@ int _root(int n, int x);
 /**
 * _sqrt_recursion - get the real square root of number
 * @n: a number that have to get root
-* Return: n root
+* Return: 0 if n is not real
 */
 int _sqrt_recursion(int n)
 {
@@ -18,6 +18,11 @@ return (n);
 else
 return (_root(n, 1));
 }
+/**
+* _root - return the n's root
+* @x: an integer
+* Return: a value of x
+*/
 int _root(int n, int x)
 {
 if (x * x == n)
