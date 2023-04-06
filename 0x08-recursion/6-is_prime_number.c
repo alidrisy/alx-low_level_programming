@@ -34,5 +34,5 @@ else if (x * x > n || x * x < n)
 {
 return (1);
 }
-return (_root(n, x + 1));
+return (_prime(n, x + 1));
 }
