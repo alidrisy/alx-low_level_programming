@@ -20,6 +20,7 @@ return (_root(n, 1));
 }
 /**
 * _root - return the n's root
+* @n: the main number
 * @x: an integer
 * Return: a value of x
 */
