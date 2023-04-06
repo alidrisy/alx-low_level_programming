@@ -20,7 +20,7 @@ return (_root(n, 1));
 }
 int _root(int n, int x)
 {
-if (x * x = n)
+if (x * x == n)
 {
 return (x);
 }
@@ -28,5 +28,5 @@ else if (x * x > n)
 {
 return (-1);
 }
-return (_root(n, x + 1);
+return (_root(n, x + 1));
 }
