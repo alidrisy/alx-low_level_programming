@@ -6,7 +6,7 @@
 * @l: integer to count length
 * Return:  1.
 *
-* On error, -1 
+* On error, -1
 */
 int palind2(char *a, int l)
 {
