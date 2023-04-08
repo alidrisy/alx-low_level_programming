@@ -1,3 +1,3 @@
-include "main.h"
+include "
 
-int _strlen(char *s)
+
