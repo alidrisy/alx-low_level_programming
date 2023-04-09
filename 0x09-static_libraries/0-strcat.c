@@ -1,5 +1,6 @@
 #include "main.h"
 
+/**
 * *_strcat - return the lignth of string
 * @dest: char
 * @src: char
