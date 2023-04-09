@@ -3,7 +3,7 @@
 /**
 * _isdigit - test for a decimal digit
 * @c: int
-* Return: 
+* Return: c
 */
 int _isdigit(int c)
 {
