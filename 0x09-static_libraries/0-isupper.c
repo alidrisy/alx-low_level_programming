@@ -1,5 +1,4 @@
 #include "main.h"
-
 /**
 * _isupper - chack number
 * @c: int
@@ -9,4 +8,3 @@ int _isupper(int c)
 {
 return (0);
 }
-

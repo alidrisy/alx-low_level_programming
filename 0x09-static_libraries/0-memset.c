@@ -1,5 +1,4 @@
 #include "main.h"
-
 /**
 * *_memset - connect two string
 * @s: char

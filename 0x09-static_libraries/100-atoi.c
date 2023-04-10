@@ -1,5 +1,4 @@
-#include "main.h"
-
+#inlude "main.h"
 /**
 * _atoi - converts the initial portion of the string
 * @s: char

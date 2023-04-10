@@ -1,5 +1,4 @@
 #include "main.h"
-
 /**
 * *_strstr - return the pointer to the occurrence
 * @haystack: char

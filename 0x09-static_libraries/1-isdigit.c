@@ -1,5 +1,4 @@
 #include "main.h"
-
 /**
 * _isdigit - test for a decimal digit
 * @c: int

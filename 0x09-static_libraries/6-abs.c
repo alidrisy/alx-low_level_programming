@@ -1,5 +1,4 @@
 #include "main.h"
-
 /**
 * _abs - compute the absolute value of number
 * @n: int

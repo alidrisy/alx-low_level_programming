@@ -1,5 +1,4 @@
 #include "main.h"
-
 /**
 * _islower - chech lowercase
 * @c: int

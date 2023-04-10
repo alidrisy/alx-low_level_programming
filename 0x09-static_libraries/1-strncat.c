@@ -1,5 +1,4 @@
 #include "main.h"
-
 /**
 * *_strncat - connect tow string
 * @dest: char

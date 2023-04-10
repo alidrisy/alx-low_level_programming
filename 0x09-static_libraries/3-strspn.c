@@ -1,5 +1,4 @@
 #include "main.h"
-
 /**
 * _strspn - get the length by bytes for string
 * @s: char

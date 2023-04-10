@@ -1,5 +1,4 @@
 #include "main.h"
-
 /**
 * *_strpbrk - return the pointer to pointer
 * @s: char

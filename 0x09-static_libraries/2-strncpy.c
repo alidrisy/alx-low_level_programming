@@ -1,5 +1,4 @@
 #include "main.h"
-
 /**
 * _strncpy - copy a pointer of string
 * @dest: char
