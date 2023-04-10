@@ -11,5 +11,5 @@ for (i = 0; *s != 0; i++)
 _putchar(*s);
 s++;
 }
-_putchar(n);
+_putchar('\n');
 }
