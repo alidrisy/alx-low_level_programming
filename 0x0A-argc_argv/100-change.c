@@ -15,8 +15,8 @@ cents = atoi(argv[1]);
 
 if ( argc > 1 || argc < 1)
 {
-printf("Error\n")
-return (0);
+printf("Error\n");
+return (1);
 }
 if (cents < 0)
 {
