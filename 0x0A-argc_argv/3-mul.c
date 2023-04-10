@@ -10,9 +10,18 @@
 
 int main(int argc, char *argv[])
 {
-int i;
+int i, x = 0;
+if (argc > 1)
+{
 for (i = 0; i < argc; i++)
 {
-x = 0;
 x *= atoi(argv[i]);
+}
+printf("%d", x);
+}
+else
+{
+printf("error\n");
+}
+return (1);
 }
