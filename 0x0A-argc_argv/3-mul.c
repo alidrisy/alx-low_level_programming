@@ -20,7 +20,7 @@ x *= atoi(argv[i]);
 }
 printf("%d\n", x);
 }
-else if (argc == 1 || argc == 2)
+else if (argc == 1 || argc 
 {
 printf("Error\n");
 return (1);
