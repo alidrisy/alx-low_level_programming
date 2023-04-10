@@ -12,7 +12,7 @@ int main(int argc, char *argv[])
 {
 int cents, i;
 
-cents = atoi(argv[1]);
+cents = atoi(argv[]);
 if (argc > 1)
 {
 printf("Error\n");
