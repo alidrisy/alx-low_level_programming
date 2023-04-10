@@ -11,14 +11,15 @@
 
 int main(int argc, char *argv[])
 {
-int i, x = 1;
-if (argc == 1 && argc == 2)
+int i, x;
+if (argc == 1 || argc == 2)
 {
 printf("Error\n");
 return (1);
 }
 else
 {
+x = 1;
 for (i = 1; i < 3; i++)
 {
 x *= atoi(argv[i]);
