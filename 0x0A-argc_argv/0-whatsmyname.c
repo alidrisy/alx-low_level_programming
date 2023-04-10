@@ -5,6 +5,6 @@
 */
 int main (int argc[], char *argv[])
 {
-printf("%s", argv);
+printf("%d", argv);
 return (0);
 }
