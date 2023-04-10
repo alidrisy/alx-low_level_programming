@@ -7,7 +7,7 @@
 * @argv: a pointer
 * Return: 0
 */
-int main (int argc, char *argv[])
+int main(int argc, char *argv[])
 {
 
 
