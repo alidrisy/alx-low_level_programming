@@ -22,7 +22,8 @@ printf("%d\n", x);
 }
 else if (argc > 2 || argc < 2)
 {
-printf("error\n");
-}
+printf("Error\n");
 return (1);
+}
+return (0);
 }
