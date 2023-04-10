@@ -12,15 +12,15 @@
 int main(int argc, char *argv[])
 {
 int i, x = 1;
-if (argc > 1 && argc < 3)
+if (argc > 1)
 {
-for (i = 1; i <= argc; i++)
+for (i = 1; i < argc; i++)
 {
 x *= atoi(argv[i]);
 }
 printf("%d\n", x);
 }
-else
+else if (argc > 2 || argc < 2)
 {
 printf("error\n");
 }
