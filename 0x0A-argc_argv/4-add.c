@@ -1,6 +1,8 @@
 #include "main.h"
 #include <stdio.h>
 #include <stdlib.h>
+#include <string.h>
+#include <ctype.h>
 
 /**
 * main - multiplies two numbers.
@@ -11,18 +13,28 @@
 
 int main(int argc, char *argv[])
 {
-int i, x;
-if (argc == 1 || argc == 2)
+int i, v, n, x;
+if (argc < 2)
+{
+printf("0\n");
+}
+char *s;
+else 
+{
+x = 0;
+for (i = 1; i < argc; i++)
+{
+s = argv[i];
+v = strlen (s);
+for (n = 0; n < v; n++)
+{
+if (isdigit(*(s + n)) == 0)
 {
 printf("Error\n");
 return (1);
 }
-else
-{
-x = 1;
-for (i = 1; i < 3; i++)
-{
-x *= atoi(argv[i]);
+}
+x += atoi(argv[i]);
 }
 printf("%d\n", x);
 }
