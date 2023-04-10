@@ -18,7 +18,7 @@ for (i = 0; i < argc; i++)
 {
 x *= atoi(argv[i]);
 }
-printf("%d", x);
+printf("%d\n", x);
 }
 else
 {
