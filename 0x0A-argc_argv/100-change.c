@@ -14,7 +14,7 @@ int cents, i;
 
 
 
-if (argc > 0 && argc < 2)
+if (argc > 0 && argc < 3)
 
 {
 cents = atoi(argv[1]);
