@@ -5,7 +5,7 @@
 #include <ctype.h>
 
 /**
-* main - multiplies two numbers.
+* main - adds two numbers.
 * @argc: numbers of arguments
 * @argv: pointer
 * Return: 1 or 0
