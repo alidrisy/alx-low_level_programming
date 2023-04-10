@@ -19,13 +19,13 @@ if (argc < 2)
 {
 printf("0\n");
 }
-else 
+else
 {
 x = 0;
 for (i = 1; i < argc; i++)
 {
 s = argv[i];
-v = strlen (s);
+v = strlen(s);
 for (n = 0; n < v; n++)
 {
 if (isdigit(*(s + n)) == 0)
