@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <stdlib.h>
 #include "main.h"
 
 /**
@@ -10,7 +11,7 @@
 int main(int argc, char *argv[])
 {
 int cents, x, i;
-cents = atoi(argv[1])
+cents = atoi(argv[1]);
 if (cents < 1)
 {
 printf("Error\n");
