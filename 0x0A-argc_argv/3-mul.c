@@ -6,7 +6,7 @@
 * main - multiplies two numbers.
 * @argc: numbers of arguments
 * @argv: pointer
-* Return: 1
+* Return: 1 or 0
 */
 
 int main(int argc, char *argv[])
