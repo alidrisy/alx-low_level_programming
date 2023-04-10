@@ -14,7 +14,7 @@ int main(int argc, char *argv[])
 int i, x = 1;
 if (argc > 1 && argc < 3)
 {
-for (i = 1; i <= 2; i++)
+for (i = 1; i <= argc; i++)
 {
 x *= atoi(argv[i]);
 }
