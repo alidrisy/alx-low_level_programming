@@ -10,7 +10,8 @@
 */
 int main(int argc, char *argv[])
 {
-int cents, x, i;
+int cents, i;
+(void)argc;
 cents = atoi(argv[1]);
 if (cents < 1)
 {
