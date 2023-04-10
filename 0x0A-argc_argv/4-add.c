@@ -14,11 +14,11 @@
 int main(int argc, char *argv[])
 {
 int i, v, n, x;
+char *s;
 if (argc < 2)
 {
 printf("0\n");
 }
-char *s;
 else 
 {
 x = 0;
