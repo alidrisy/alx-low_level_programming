@@ -11,7 +11,7 @@
 int main(int argc, char *argv[])
 {
 int cents, i;
-(void)argc;
+
 cents = atoi(argv[1]);
 if (argc > 1)
 {
