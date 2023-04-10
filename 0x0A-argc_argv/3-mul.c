@@ -16,7 +16,7 @@ if (argc > 0 )
 {
 for (i = 0; i < argc; i++)
 {
-x *= atoi(argv[i]);
+x = x * atoi(argv[i]);
 }
 printf("%d\n", x);
 }
