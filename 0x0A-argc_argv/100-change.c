@@ -18,7 +18,7 @@ if (argc > 2)
 printf("Error\n");
 return (1);
 }
-else if (cents < 0)
+if (cents < 0)
 {
 printf("0\n");
 }
