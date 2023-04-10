@@ -12,7 +12,7 @@
 int main(int argc, char *argv[])
 {
 int i, x = 1;
-if (argc > 1)
+if (argc == 1 && argc == 2)
 {
 for (i = 1; i < argc; i++)
 {
@@ -20,7 +20,7 @@ x *= atoi(argv[i]);
 }
 printf("%d\n", x);
 }
-else if (argc > 2 || argc < 2)
+else
 {
 printf("Error\n");
 return (1);
