@@ -4,11 +4,11 @@
 /**
 * main - print the number of value the input
 * @argc: the number of value
-* @argv: pointer
+*
 * Return: 0
 */
 
-int main(int argc, char* argv[])
+int main(int argc)
 {
 printf("%d\n", argc);
 return (0);
