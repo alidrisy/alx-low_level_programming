@@ -1,1 +1,1 @@
-tis repository about start p programing with C
+This repository about start p programing with C
