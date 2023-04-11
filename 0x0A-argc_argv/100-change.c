@@ -8,17 +8,13 @@
 * @argv: a pointer
 * Return: 0 or 1
 */
+
 int main(int argc, char *argv[])
 {
 int cents, i = 0;
-
-
-
-
-
 if (argc == 2)
 {
-cents = atoi(*(argv+1));
+cents = atoi(*(argv + 1));
 if (cents < 0)
 {
 printf("0\n");
@@ -53,4 +49,3 @@ return (1);
 }
 return (0);
 }
-
