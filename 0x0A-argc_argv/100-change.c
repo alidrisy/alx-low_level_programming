@@ -13,7 +13,7 @@ int main(int argc, char *argv[])
 int cents, i;
 cents = atoi(argv[1]);
 
-if ( argc != 2)
+if (argc != 2)
 {
 printf("Error\n");
 return (1);
@@ -24,8 +24,8 @@ printf("0\n");
 }
 else
 {
-while (cents >= 1)
-{
+
+
 if (cents > 25)
 for (i = 0; cents > 24; i++)
 cents = cents - 25;
@@ -43,7 +43,7 @@ for (; cents != 0; i++)
 cents = cents - 1;
 }
 printf("%d\n", i);
-}
+
 return (0);
 }
 
