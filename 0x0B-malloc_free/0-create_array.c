@@ -28,5 +28,6 @@ if (x != '\0')
 for (i = 0; i < size; i++)
 x[i] = c;
 }
+}
 return (x);
 }
