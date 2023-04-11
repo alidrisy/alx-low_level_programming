@@ -23,11 +23,11 @@ return ('\0');
 while (size != 0)
 {
 x = (char *)malloc(size * sizeof(char));
-if (x != '\0')
-{
+
+
 for (i = 0; i < size; i++)
 x[i] = c;
-}
+
 }
 return (x);
 }
