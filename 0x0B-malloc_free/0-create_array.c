@@ -11,17 +11,17 @@
 
 char *create_array(unsigned int size, char c)
 {
-char *x = '\0';
+char *x = NULL;
 unsigned int i = 0;
 
 if (size == 0)
 {
-return ('\0');
+return (NULL);
 }
 while (size != 0)
 {
 x = (char *)malloc(size * sizeof(char));
-if (x != '\0')
+if (x != NULL)
 {
 x[i] = c;
 i++;
