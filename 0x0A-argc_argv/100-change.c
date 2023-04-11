@@ -17,12 +17,12 @@ cents = atoi(*(argv+1));
 
 
 if (argc == 2)
-
+{
 if (cents < 0)
 {
 printf("0\n");
 }
-else if
+else
 {
 while (cents != 0)
 {
@@ -43,6 +43,7 @@ for (; cents > 0; i++)
 cents = cents - 1;
 }
 printf("%d\n", i);
+}
 }
 else
 {
