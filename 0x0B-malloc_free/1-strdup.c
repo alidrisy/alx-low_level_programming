@@ -18,7 +18,7 @@ return (0);
 }
 for (i = 0; str[i]; i++)
 ;
-x = malloc((i + 1)* sizeof(char));
+x = malloc((i + 1) * sizeof(char));
 if (x == 0)
 {
 return (0);
