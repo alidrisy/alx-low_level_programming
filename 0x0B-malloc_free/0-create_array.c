@@ -15,7 +15,7 @@ int i = 0;
 x = malloc(size * sizeof(char));
 if (size == 0)
 {
-return (0);
+return ('\0');
 }
 
 while (i < size)
@@ -23,6 +23,6 @@ while (i < size)
 x[i] = c;
 i ++;
 }
-x[i] = 0;
+x[i] = '\0';
 return (x);
 }
