@@ -42,7 +42,7 @@ else if (cents == 1)
 for (; cents > 0; i++)
 cents = cents - 1;
 }
-printf("%d\n", i);
+
 }
 }
 else
@@ -50,5 +50,6 @@ else
 printf("Error\n");
 return (1);
 }
+printf("%d\n", i);
 return (0);
 }
