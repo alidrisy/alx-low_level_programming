@@ -39,11 +39,11 @@ else if (cents < 5 && cents > 1)
 for (; cents > 1; i++)
 cents = cents - 2;
 else if (cents == 1)
-for (; cents != 0; i++)
+for (; cents > 0; i++)
 cents = cents - 1;
 }
-}
 printf("%d\n", i);
+}
 return (0);
 }
 
