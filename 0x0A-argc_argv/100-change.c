@@ -11,13 +11,14 @@
 int main(int argc, char *argv[])
 {
 int cents, i = 0;
-cents = atoi(*(argv+1));
+
 
 
 
 
 if (argc == 2)
 {
+cents = atoi(*(argv+1));
 if (cents < 0)
 {
 printf("0\n");
@@ -42,7 +43,7 @@ else if (cents == 1)
 for (; cents > 0; i++)
 cents = cents - 1;
 }
-
+printf("%d\n", i);
 }
 }
 else
@@ -50,6 +51,6 @@ else
 printf("Error\n");
 return (1);
 }
-printf("%d\n", i);
 return (0);
 }
+
