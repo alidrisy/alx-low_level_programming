@@ -25,6 +25,6 @@ x[i] = c;
 i++;
 }
 x[i] = '\0';
-free(x);
-return (x);
+
+return ('\0');
 }
