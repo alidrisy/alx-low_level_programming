@@ -21,10 +21,10 @@ return ('\0');
 while (size != 0)
 {
 x = (char *)malloc(size * sizeof(char));
+if (x != '\0')
+{
 x[i] = c;
 i++;
 }
-
-
 return (x);
 }
