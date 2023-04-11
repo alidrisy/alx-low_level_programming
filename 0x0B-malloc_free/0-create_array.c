@@ -22,8 +22,9 @@ return ('\0');
 while (i < size)
 {
 x[i] = c;
-i ++;
+i++;
 }
 x[i] = '\0';
+free(x);
 return (x);
 }
