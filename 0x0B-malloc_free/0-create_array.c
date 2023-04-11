@@ -12,19 +12,19 @@
 char *create_array(unsigned int size, char c)
 {
 char *x = NULL;
-unsigned int i = 0;
+unsigned int i = '\0';
 
 if (size == 0)
 {
-return (NULL);
+return ('\0');
 }
 while (size != 0)
 {
 x = (char *)malloc(size * sizeof(char));
-if (x != NULL)
+if (x != '\0')
 {
+for (i = 0; i < size; i++)
 x[i] = c;
-i++;
 }
 return (x);
 }
