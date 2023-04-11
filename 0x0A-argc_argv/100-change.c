@@ -24,8 +24,8 @@ printf("0\n");
 }
 else
 {
-
-
+while (coins != 0)
+{
 if (cents > 25)
 for (i = 0; cents > 24; i++)
 cents = cents - 25;
@@ -43,7 +43,7 @@ for (; cents != 0; i++)
 cents = cents - 1;
 }
 printf("%d\n", i);
-
+}
 return (0);
 }
 
