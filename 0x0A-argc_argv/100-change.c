@@ -42,8 +42,8 @@ else if (cents == 1)
 for (; cents != 0; i++)
 cents = cents - 1;
 }
-printf("%d\n", i);
 }
+printf("%d\n", i);
 return (0);
 }
 
