@@ -11,14 +11,14 @@
 
 char *argstostr(int ac, char **av)
 {
-char *c, *z;
+char *c;
 int x, v, n;
 if (ac == 0 || av == NULL)
 return (NULL);
 n = 0;
 for (x = 0; x < ac; x++)
 {
-z = *(av + x);
+c = *(av + x);
 for (v = 0; v < ac; v++)
 {
 n++;
@@ -34,10 +34,10 @@ return (NULL);
 n = 0;
 for (x = 0; x < ac; x++)
 {
-z = *(av + x);
-for (v = 0; z[v]; v++)
+c = av[x];
+for (v = 0; av[v][x]; v++)
 {
-c[n] = z[v];
+c[n] = av[v][x];
 n++;
 }
 c[n] = '\n';
