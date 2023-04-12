@@ -27,7 +27,7 @@ n++;
 }
 n += 1;
 }
-c = malloc(sizeof(char) * n);
+c = malloc(sizeof(char) * n + 1);
 if (c == NULL)
 {
 free(c);
@@ -39,8 +39,8 @@ for (x = 0; x < ac; x++)
 c = av[x];
 for (v = 0; av[x][v]; v++)
 {
-c[n] = av[v][x];
-n++;
+c[n] = av[x][v];
+n++, v++;
 }
 c[n] = '\n';
 n++;
