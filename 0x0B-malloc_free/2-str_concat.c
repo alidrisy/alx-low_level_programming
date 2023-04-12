@@ -22,7 +22,7 @@ for (v = 0; s2[v]; v++)
 x = malloc(sizeof(char) * (i + v + 1));
 if (x == NULL)
 {
-return (NULL);
+return ('\0');
 }
 c = 0;
 while (c < (i + v))
