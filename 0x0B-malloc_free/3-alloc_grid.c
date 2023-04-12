@@ -5,7 +5,7 @@
 /**
 * **alloc_grid - returns a pointer to a 2 dimensional array of integers
 * @width: int
-* @linght: int
+* @height: int
 * Return: tho pointer or NULL
 */
 
@@ -22,7 +22,7 @@ if (x == NULL)
 {
 return (NULL);
 }
-for (z = 0; z <= height; z++)
+for (z = 0; z < height; z++)
 {
 x[z] = (int *)malloc(sizeof(int) * width);
 if (x[z] == NULL)
