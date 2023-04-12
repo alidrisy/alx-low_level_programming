@@ -18,7 +18,7 @@ return (NULL);
 n = 0;
 for (x = 0; x < ac; x++)
 {
-c = *(av + x);
+c = av[x];
 for (v = 0; v < ac; v++)
 {
 n++;
