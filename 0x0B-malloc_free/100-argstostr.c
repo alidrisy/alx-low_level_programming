@@ -14,7 +14,9 @@ char *argstostr(int ac, char **av)
 char *c;
 int x, v, n;
 if (ac == 0 || av == NULL)
+{
 return (NULL);
+}
 n = 0;
 for (x = 0; x < ac; x++)
 {
@@ -35,7 +37,7 @@ n = 0;
 for (x = 0; x < ac; x++)
 {
 c = av[x];
-for (v = 0; av[v][x]; v++)
+for (v = 0; av[x][v]; v++)
 {
 c[n] = av[v][x];
 n++;
