@@ -26,6 +26,11 @@ n++;
 n += 1;
 }
 c = malloc(sizeof(char) * n);
+if (c == NULL)
+{
+free(c);
+return (NULL);
+}
 n = 0;
 for (x = 0; x < ac; x++)
 {
@@ -38,6 +43,6 @@ n++;
 c[n] = '\n';
 n++;
 }
-
+c[n] = '\0';
 return (c);
 }
