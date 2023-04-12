@@ -25,7 +25,7 @@ n++;
 }
 n += 1;
 }
-c = malloc(sizeof(char) * n + 1);
+c = malloc(sizeof(char) * (n + 1));
 n = 0;
 for (x = 0; x < ac; x++)
 {
