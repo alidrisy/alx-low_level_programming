@@ -13,7 +13,7 @@ void *malloc_checked(unsigned int b)
 unsigned int i;
 
 for (i = 0; i < b; i++)
-b = malloc(i + 1);
+b = (int*)malloc(i + 1);
 if (!b)
 {
 return (98);
