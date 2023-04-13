@@ -10,7 +10,7 @@
 
 void *malloc_checked(unsigned int b)
 {
-unsigned int *i;
+unsigned int i;
 
 for (i = 0; i < b; i++)
 b = malloc(i + 1);
