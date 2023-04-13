@@ -16,7 +16,7 @@ void *i;
 i = malloc(b);
 if (i == 0)
 {
-exit (98);
+exit(98);
 }
 return (i);
 }
