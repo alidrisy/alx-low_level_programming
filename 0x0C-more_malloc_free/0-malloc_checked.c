@@ -10,14 +10,14 @@
 
 void *malloc_checked(unsigned int b)
 {
-unsigned int i;
+void *i;
 
-for (i = 0; i < b; i++)
-b = (int*)malloc(i + 1);
-if (!b)
+
+i = malloc(b);
+if (i == 0)
 {
-return (98);
+exit (98);
 }
-return (b);
+return (i);
 }
 
