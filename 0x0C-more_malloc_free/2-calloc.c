@@ -22,11 +22,11 @@ char *_doit(char *ptr, unsigned int x)
 
 char *d = ptr;
 
+
 do
-
-*d++=0;
-
+*d++ = 0;
 while (--sizr != 0);
+
 
 return (d);
 
