@@ -17,7 +17,7 @@ if (min > max)
 return (NULL);
 
 n = max - min;
-x = malloc(sizeof(*x) * n + 1);
+x = malloc(sizeof(*x) * (n + 1));
 if (x == NULL)
 return (NULL);
 
