@@ -1,37 +1,25 @@
-#include"main.h"
+#include "main.h"
 #include <stdio.h>
 #include <stdlib.h>
 
+
 /**
-*
-* *_doit - initialize a byte of memory.
-*
-* @x: int
-*
-* @ptr: char
-*
-*
-*
-* Return: pointer
-*
+* *_memset - initialize a byte of memory.
+* @c: char
+* @v: int
+* @n: int
+* Return: c
 */
 
-void *_doit(void *ptr, unsigned int x)
-
+char *_memset(char *c, int v, unsigned int n)
 {
+unsigned i;
 
-char *d = ptr;
+for (i = 0; i < n; i++)
+c[i] = v;
 
-
-do
-*d++ = 0;
-while (--sizr != 0);
-
-
-return (d);
-
+return (c);
 }
-
 /**
 * *_calloc - allocates memory for an array, using malloc.
 * @nmemb: the array
@@ -47,6 +35,7 @@ return (NULL);
 x = malloc(nmemb * size);
 if (x == 0)
 return (NULL);
-_doit(x, nmemb * size)
+
+_memset(x, 0, nmemb * size);
 return (x);
 }
