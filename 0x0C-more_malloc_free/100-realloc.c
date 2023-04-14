@@ -28,7 +28,10 @@ return (NULL);
 }
 for ( new_size = 0; new_size <= old_size; new_size++)
 x = malloc(sizeof(ptr) * new_size);
-
+if (x == NULL)
+{
+return (NULL);
+}
 free (ptr);
-return (ptr);
+return (x);
 }
