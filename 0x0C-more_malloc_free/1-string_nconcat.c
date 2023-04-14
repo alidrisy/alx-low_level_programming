@@ -7,6 +7,7 @@
 * @s1: char
 * @s2: char
 * @n: int
+* Return: x
 */
 
 char *string_nconcat(char *s1, char *s2, unsigned int n)
