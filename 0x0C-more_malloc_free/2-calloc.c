@@ -3,20 +3,20 @@
 #include <stdlib.h>
 
 /**
-
-* *_doit - initialize a byte of memory.
-
-* @x: int
-
-* @ptr: char
-
 *
-
+* *_doit - initialize a byte of memory.
+*
+* @x: int
+*
+* @ptr: char
+*
+*
+*
 * Return: pointer
-
+*
 */
 
-char *_doit(char *ptr, unsigned int x)
+void *_doit(void *ptr, unsigned int x)
 
 {
 
