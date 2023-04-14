@@ -27,7 +27,7 @@ free(ptr);
 return (NULL);
 }
 for ( new_size = 0; new_size <= old_size; new_size++)
-x = malloc(sizeof(ptr) * new_size);
+x = (char *)malloc(sizeof(ptr) * new_size);
 if (x == NULL)
 {
 return (NULL);
