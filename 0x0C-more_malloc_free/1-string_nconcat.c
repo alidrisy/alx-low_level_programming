@@ -15,11 +15,11 @@ unsigned int c, v, z;
 char *x;
 if (s1 == NULL)
 {
-s1 = ' ';
+s1 = "";
 }
 if (s2 == NULL)
 {
-s2 = ' ';
+s2 = "";
 }
 for (c = 0; s1[c]; c++)
 ;
