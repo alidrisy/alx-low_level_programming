@@ -15,15 +15,15 @@ unsigned int c, v, z;
 char *x;
 if (s1 == NULL)
 {
-s1 =  ;
+s1 = '';
 }
 if (s2 == NULL)
 {
-s2 =  ;
+s2 = '';
 }
 for (c = 0; s1[c]; c++)
 ;
-for (v > c; s2[v]; v++)
+for (v = 0; s2[v]; v++)
 ;
 x = malloc(sizeof(char) * n);
 if (x == NULL)
@@ -37,7 +37,7 @@ else
 x[z] = s2[z - c];
 z++;
 }
-x[z] = 0;
+x[z] = '\0';
 z++;
 return (x);
 }
