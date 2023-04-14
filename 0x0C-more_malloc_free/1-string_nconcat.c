@@ -28,7 +28,7 @@ for (v = 0; s2[v]; v++)
 ;
 if (n < v)
 v = n;
-x = malloc(sizeof(char) * (c + v) + 1);
+x = malloc(sizeof(char) * c + v + 1);
 if (x == NULL)
 return (0);
 
