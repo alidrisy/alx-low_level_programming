@@ -21,7 +21,7 @@ x = malloc(sizeof(*x) * n + 1);
 if (x == NULL)
 return (NULL);
 
-for (z = 0; z <= n; z++, n++)
+for (z = 0; z <= n; z++, min++)
 {
 x[z] = min;
 }
