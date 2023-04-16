@@ -9,11 +9,12 @@ char *_strstr(char *haystack, char *needle)
 {
 unsigned int x, v;
 
-for (x = 0; needle[x]; x++)
-{
-
 for (v = 0; haystack[v]; v++)
 {
+
+for (x = 0; needle[x]; x++)
+{
+v++;
 if (needle[x] == haystack[v])
 {
 break;
