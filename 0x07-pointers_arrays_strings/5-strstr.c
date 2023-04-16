@@ -20,9 +20,9 @@ break;
 }
 
 }
-if (haystack[v] != '\0')
+if (needle[x] != '\0')
 {
-return (needle + x);
+return (haystack + v);
 }
 }
 return ('\0');
