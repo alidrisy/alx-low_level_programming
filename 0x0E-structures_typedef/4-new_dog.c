@@ -16,7 +16,7 @@ int v, b;
 
 for (v = 0; name[v]; v++)
 ;
-for (b =0; owner[b]; b++)
+for (b = 0; owner[b]; b++)
 ;
 
 x = malloc(sizeof(dog_t));
