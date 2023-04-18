@@ -6,10 +6,15 @@
 * @b: char
 * @x: char
 */
-/**
+
 void _copy(char *b, char *x)
 {
-*/
+int i;
+for (i = 0; x[i]; i++)
+b[i] = x[i];
+b[i] = '\0';
+}
+
 /**
 * new_dog - prints a struct dog
 * @name: pointet to struct dog
@@ -47,8 +52,8 @@ free(x->name);
 free(x);
 return (NULL);
 }
-x->name = name;
-x->owner = owner;
+_copy(x->name, name);
+_copy(x->owner, owner);
 x->age = age;
 return (x);
 }
