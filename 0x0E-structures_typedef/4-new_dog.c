@@ -38,5 +38,6 @@ free(x->name);
 free(x);
 return (NULL);
 }
+x->age = age;
 return (x);
 }
