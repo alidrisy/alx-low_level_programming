@@ -2,6 +2,15 @@
 #include <stdlib.h>
 
 /**
+* _copy - copy a string
+* @b: char
+* @x: char
+*/
+/**
+void _copy(char *b, char *x)
+{
+*/
+/**
 * new_dog - prints a struct dog
 * @name: pointet to struct dog
 * @age: int
@@ -38,6 +47,8 @@ free(x->name);
 free(x);
 return (NULL);
 }
+x->name = name;
+x->owner = owner;
 x->age = age;
 return (x);
 }
