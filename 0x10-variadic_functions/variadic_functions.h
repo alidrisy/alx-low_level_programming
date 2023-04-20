@@ -13,7 +13,7 @@
 * @f: function pointer for the operation to be used.
 */
 typedef struct print_ops{
-char *ops;
+char *op;
 void (*f)(va_list);
 } p_op;
 
