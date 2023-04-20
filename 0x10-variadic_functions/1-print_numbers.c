@@ -10,7 +10,7 @@
 void print_numbers(const char *separator, const unsigned int n, ...)
 {
 va_list i;
-unsigned int x, v;
+unsigned int x;
 va_start (i, n);
 v = 0;
 for (x = 0; x < n; x++)
@@ -22,6 +22,6 @@ if (x < n - 1 && (separator))
 printf("%s", separator);
 }
 }
-putchar(n);
+putchar('/n');
 va_end(i);
 }
