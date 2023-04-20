@@ -1,7 +1,7 @@
-#include <stdarg.h>
+#include "variadic_functions.h"
 #include <stdio.h>
 #include <stdlib.h>
-#include "variadic_functions.h"
+
 
 /**
 * ptr_str - print a string type or (nil) if empty/NULL;
