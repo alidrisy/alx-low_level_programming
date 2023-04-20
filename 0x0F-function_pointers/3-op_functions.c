@@ -46,7 +46,7 @@ return (x);
 * op_div - division two numbers
 * @a: int
 * @b: int
-* Return: the result of the division of a by b. 
+* Return: the result of the division of a by b.
 */
 int op_div(int a, int b)
 {
@@ -64,7 +64,7 @@ return (x);
 * op_mod - model two numbers
 * @a: int
 * @b: int
-* Return: the result of the model of a by b. 
+* Return: the result of the model of a by b.
 */
 int op_mod(int a, int b)
 {
