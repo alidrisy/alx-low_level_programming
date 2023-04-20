@@ -1,5 +1,11 @@
 #include "3-calc.h"
 
+/**
+* main - git the a sum
+* @argc: int
+* @argv: pointer
+* Return: 0
+*/
 int main(int argc, char *argv[])
 {
 int z, v, sum;
