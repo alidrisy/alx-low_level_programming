@@ -2,7 +2,7 @@
 
 int main(int argc, char *argv[])
 {
-int z, v, n, sum;
+int z, v, sum;
 int (*x) (int, int);
 
 if (argc < 4 || argc > 4)
@@ -14,15 +14,15 @@ exit(98);
 z = atoi(argv[1]);
 v = atoi(argv[3]);
 
-n = get_op_func(argv[2]);
+x = get_op_func(argv[2]);
 
-if (n == NULL)
+if (x == NULL)
 {
 printf("Error\n");
 return (99);
 }
 
-sum = n(z, v);
+sum = x(z, v);
 
 printf ("%d\n", sum);
 
