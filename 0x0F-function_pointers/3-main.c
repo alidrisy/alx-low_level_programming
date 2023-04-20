@@ -3,7 +3,7 @@
 int main(int argc, char *argv[])
 {
 int z, v, sum;
-int (*x) (int, int);
+int (*x)(int, int);
 
 if (argc < 4 || argc > 4)
 {
@@ -24,7 +24,7 @@ return (99);
 
 sum = x(z, v);
 
-printf ("%d\n", sum);
+printf("%d\n", sum);
 
 return (0);
 }
