@@ -54,11 +54,11 @@ void ptr_int(va_list x)
 {
 printf("%d", va_arg(x, int));
 }
-**
- * print_all - print all argument that match with format.
- * @format: type to print out.
- * @...: arguments to print.
- */
+/**
+* print_all - print all argument that match with format.
+* @format: type to print out.
+* @...: arguments to print.
+*/
 
 
 void print_all(const char * const format, ...)
@@ -92,12 +92,12 @@ c++;
 }
 n++;
 }
-putchar(n);
-va_ey
+putchar('\n');
+va_end(x);
+}
 
 
 
 
 
 
-v
