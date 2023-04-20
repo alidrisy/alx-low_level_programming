@@ -1,4 +1,5 @@
 #include <stdarg.h>
+#include <stdio.h>
 #include "variadic_functions.h"
 
 /**
@@ -22,6 +23,6 @@ if (x < n - 1 && (separator))
 printf("%s", separator);
 }
 }
-putchar('/n');
+putchar('\n');
 va_end(i);
 }
