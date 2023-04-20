@@ -40,7 +40,7 @@ printf("%f", va_arg(x, double));
 */
 
 
-void ptr_char(va_list val)
+void ptr_char(va_list x)
 {
 printf("%c", va_arg(x, int));
 }
