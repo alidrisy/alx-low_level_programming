@@ -15,7 +15,7 @@ unsigned int s, i;
 if (n == 0)
 return (0);
 
-va_start (x, n);
+va_start(x, n);
 
 s = 0;
 for (i = 0; i < n; i++)
