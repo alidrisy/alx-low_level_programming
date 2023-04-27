@@ -2,16 +2,17 @@ global start
 
 section .text
 
-start: mov rax, 1
+start:
+mov rax, 1
 mov rdi, 1
-mov rsi, msg
-mov rdx, 16
+mov rsi, massage
+mov rdx, 13
 syscall
 mov rax, 60
 mov rdi, rdi
 syscall
 
 section   .data
-msg: db "Hello, Holberton", 10
+massage: db "Hello, Holberton", 10
 
 
