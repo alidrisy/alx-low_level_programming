@@ -12,9 +12,9 @@ main:
 mov rax, 1
 mov rdi, 1
 mov rsi, massage
-mov rdx, 13
+mov rdx, 1
 syscall
-mov rax, 60
+mov rax, 1
 mov rdi, rdi
 syscall
 
