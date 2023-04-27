@@ -10,10 +10,19 @@
 
 void free_list(list_t *head)
 {
+list_t new = NULL;
+list_t ne = NULL;
+
 if (!head)
 return;
 
-free(head->str);
-free(head);
+new = head;
+while(new != NULL)
+{
+ne = new->next;
+free(new->str);
+free(new);
+new = ne;
+}
 head = NULL;
 }
