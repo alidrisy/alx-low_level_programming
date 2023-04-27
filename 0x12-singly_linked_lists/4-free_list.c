@@ -10,8 +10,8 @@
 
 void free_list(list_t *head)
 {
-list_t new = NULL;
-list_t ne = NULL;
+list_t *new = NULL;
+list_t *ne = NULL;
 
 if (!head)
 return;
