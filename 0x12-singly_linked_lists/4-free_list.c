@@ -10,10 +10,10 @@
 
 void free_list(list_t *head)
 {
-/*if (!head)
-return;*/
+if (!head)
+return;
 
-
+free(head->len);
 free(head->str);
 free(head);
 }
