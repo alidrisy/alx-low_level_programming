@@ -17,7 +17,7 @@ if (!head)
 return;
 
 new = head;
-while(new != NULL)
+while (new != NULL)
 {
 ne = new->next;
 free(new->str);
