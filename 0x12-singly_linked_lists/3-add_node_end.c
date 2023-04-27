@@ -10,7 +10,7 @@
 * Return: the new address of the element
 */
 
-list_t *add_node_end(list_t **head, const char *str);
+list_t *add_node_end(list_t **head, const char *str)
 {
 list_t *new = NULL;
 list_t *ne = NULL;
