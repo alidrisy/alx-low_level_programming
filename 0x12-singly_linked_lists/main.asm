@@ -12,6 +12,6 @@ mov rdi, rdi
 syscall
 
 section   .data
-msg: db Hello, Holberton, 10
+msg: db "Hello, Holberton", 10
 
 
