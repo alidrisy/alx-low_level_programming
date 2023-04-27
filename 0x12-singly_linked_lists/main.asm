@@ -1,6 +1,12 @@
+section   .data
+massage: db "Hello, Holberton", 10
+
 global main
 
 section .text
+
+
+
 
 main:
 mov rax, 1
@@ -12,7 +18,6 @@ mov rax, 60
 mov rdi, rdi
 syscall
 
-section   .data
-massage: db "Hello, Holberton", 10
+
 
 
