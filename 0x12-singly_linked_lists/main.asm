@@ -1,8 +1,8 @@
-global start
+global _start
 
 section .text
 
-start:
+_start:
 mov rax, 1
 mov rdi, 1
 mov rsi, massage
