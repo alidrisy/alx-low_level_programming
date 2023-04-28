@@ -1,3 +1,3 @@
-In the end of this project we will learn :
+In the end of this project we will learn more about:
 - How to use linked lists
-- Start to look for the right source of information without too much help
+- print, add, free and delete nodes
