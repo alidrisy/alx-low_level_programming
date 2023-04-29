@@ -9,7 +9,7 @@ int x;
 
 if (*head == NULL)
 {
-return (-1);
+return (0);
 }
 new = (*head)->next;
 x = (*head)->n;
