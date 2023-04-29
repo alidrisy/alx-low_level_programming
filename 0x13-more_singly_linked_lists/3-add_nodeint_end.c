@@ -20,7 +20,7 @@ return (NULL);
 }
 new->n = n;
 new->next = NULL;
-if(*head == NULL)
+if (*head == NULL)
 {
 *head = new;
 }
