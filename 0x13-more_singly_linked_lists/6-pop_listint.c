@@ -5,11 +5,11 @@
 int pop_listint(listint_t **head)
 {
 listint_t *new = NULL;
-int n;
-new = malloc(sizeof(listint_t));
+int n = -1;
+
 if (*head == NULL)
 {
-return (0);
+return (-1);
 }
 new = (*head)->next;
 n = (*head)->n;
