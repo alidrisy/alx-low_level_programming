@@ -13,7 +13,7 @@ return (0);
 }
 new = (*head)->next;
 n = (*head)->n;
-free(*head);
+free(new);
 *head = new;
 
 return (n);
