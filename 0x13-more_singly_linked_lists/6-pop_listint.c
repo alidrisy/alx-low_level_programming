@@ -11,7 +11,7 @@ if (*head == NULL)
 {
 return (0);
 }
-*head = new;
+new = *head;
 n = new->n;
 *head = new->next;
 free(new);
