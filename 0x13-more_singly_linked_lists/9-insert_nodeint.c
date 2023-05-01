@@ -21,8 +21,8 @@ i = 0;
 new = malloc(sizeof(listint_t));
 ne = malloc(sizeof(listint_t));
 
-if (*head == 0)
-return (NULL);
+
+
 
 if (idx == 0)
 {
@@ -45,6 +45,9 @@ i = 1;
 x++;
 new = new->next;
 }
+if (*head == 0)
+return (NULL);
+
 if (i == 0)
 return (NULL);
 
