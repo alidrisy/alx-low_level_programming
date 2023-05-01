@@ -18,26 +18,33 @@ x = 0;
 if (*head == NULL)
 return (-1);
 
-new = *head;
-
 if (index == 0)
 {
+new = *head;
 *head = new->next;
 free(new);
 return (1);
 }
 
-while (new)
+else
+{
+new = *head;
+while (new != NULL)
 {
 if (x == index - 1)
 {
-new = new->next;
-}
 ne = new->next;
-new->next = new->next->next;
+if(ne)
+{
+new->next = ne->next;
 free(ne);
 return (1);
+}
+}
+new= new->next;
 x++;
 }
+}
+
 return (-1);
 }
