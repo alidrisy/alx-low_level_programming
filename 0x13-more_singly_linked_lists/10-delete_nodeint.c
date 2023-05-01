@@ -13,11 +13,7 @@ int delete_nodeint_at_index(listint_t **head, unsigned int index)
 {
 listint_t *new;
 listint_t *ne;
-
 unsigned int x;
-new = malloc(sizeof(listint_t));
-
-
 new = *head;
 if (index == 0)
 {
@@ -30,15 +26,15 @@ while (new)
 {
 if (x == index - 1)
 {
-new = new->next;
+ne = new->next;
 if (new)
 {
-ne = new->next;
-new->next = ne->next->next;
+new->next = ne->next;
 free(ne);
 return (1);
 }
 }
+new = new->next;
 x++;
 }
 return (-1);
