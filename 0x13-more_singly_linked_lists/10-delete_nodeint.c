@@ -36,7 +36,7 @@ if (new)
 ne = new->next;
 new->next = ne->next->next;
 free(ne);
-return (-1);
+return (1);
 }
 }
 x++;
