@@ -48,5 +48,5 @@ new = new->next;
 if (i == 0)
 return (NULL);
 
-return (ne);
+return (NULL);
 }
