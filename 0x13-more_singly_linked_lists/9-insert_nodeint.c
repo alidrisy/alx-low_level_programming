@@ -20,8 +20,8 @@ x = 0;
 i = 0;
 new = malloc(sizeof(listint_t));
 ne = malloc(sizeof(listint_t));
-
-
+if(*head == NULL)
+return (NULL);
 
 if (idx == 0)
 {
