@@ -39,7 +39,7 @@ ne->n = n;
 ne->next = new->next;
 new->next = ne;
 return (ne);
-i++;
+i = 1;
 }
 x++;
 new = new->next;
