@@ -34,14 +34,14 @@ while (new != NULL)
 if (x == index - 1)
 {
 ne = new->next;
-if(ne)
+if (ne)
 {
 new->next = ne->next;
 free(ne);
 return (1);
 }
 }
-new= new->next;
+new = new->next;
 x++;
 }
 }
