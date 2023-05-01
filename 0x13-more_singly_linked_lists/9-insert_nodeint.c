@@ -31,8 +31,8 @@ new->next = *head;
 *head = new;
 return (new);
 }
-if (*head == 0)
-return (NULL);
+
+
 
 new = *head;
 while (new != NULL && *head != NULL && ne != NULL)
@@ -51,8 +51,8 @@ new = new->next;
 
 
 
-if (i == 0)
-return (NULL);
+
+
 
 return (NULL);
 }
