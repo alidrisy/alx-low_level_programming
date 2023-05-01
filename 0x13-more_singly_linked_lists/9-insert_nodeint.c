@@ -20,20 +20,22 @@ x = 0;
 new = malloc(sizeof(listint_t));
 ne = malloc(sizeof(listint_t));
 
-new = *head;
-
 if (idx == 0)
 {
-ne->n = n;
-ne->next = *head;
-*head = ne;
-return (ne);
+new->n = n;
+new->next = *head;
+*head = new;
+return (new);
 }
 if (*head == 0)
 return (NULL);
 
+new = *head
 while (new != NULL || *head != NULL || ne != NULL)
 {
+if (new == NULL)
+return (NULL);
+
 if (idx - 1  == x)
 {
 ne->n = n;
