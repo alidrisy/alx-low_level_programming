@@ -27,7 +27,7 @@ while (new)
 if (x == index - 1)
 {
 ne = new->next;
-if (new)
+if (ne)
 {
 new->next = ne->next;
 free(ne);
