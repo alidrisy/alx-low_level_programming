@@ -31,7 +31,7 @@ new->next = *head;
 return (new);
 }
 new = *head;
-while (new != NULL && head != NULL && ne != NULL)
+while (new != NULL && *head != NULL && ne != NULL)
 {
 if (idx - 1  == x)
 {
