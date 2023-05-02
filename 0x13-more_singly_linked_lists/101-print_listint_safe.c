@@ -3,7 +3,7 @@
 #include "lists.h"
 
 /**
-* print_listint_safe - deletes the node at index
+* print_listint_safe - prints a listint_t linked list.
 * @head: the first address
 * Return: the number of node.
 */
