@@ -12,6 +12,7 @@ listint_t *new;
 listint_t *ne;
 size_t x:
 x = 0;
+
 new = *h;
 
 if (!h)
@@ -19,12 +20,13 @@ return (0);
 
 while (new != NULL)
 {
+x++;
 ne = new;
 new = new->next;
 free(ne);
-x++;
 
-if (new > ne)
+
+if (ne < new)
 break;
 }
 *h = NULL;
