@@ -16,7 +16,7 @@ x = 0;
 new = *h;
 
 if (!h)
-return (0);
+return (NULL);
 
 while (new != NULL)
 {
