@@ -11,10 +11,10 @@ size_t free_listint_safe(listint_t **h)
 listint_t *new;
 listint_t *ne;
 size_t x;
-x = 1;
+x = 0;
 
 new = *h;
-if(h == NULL && *h == NULL)
+if (h == NULL && *h == NULL)
 return (0);
 
 while (new != NULL)
