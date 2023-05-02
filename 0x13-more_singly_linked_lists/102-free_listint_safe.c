@@ -29,7 +29,7 @@ if (ne < new)
 {
 break;
 }
-if (!h)
+if (h == NULL && *h == NULL)
 return (0);
 
 *h = NULL;
