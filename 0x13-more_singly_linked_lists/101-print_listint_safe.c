@@ -14,8 +14,8 @@ const listint_t *new = NULL;
 const listint_t *ne = NULL;
 int i, x = 0;
 
-if (head == NULL)
-exit(98);
+
+
 
 new = head;
 
