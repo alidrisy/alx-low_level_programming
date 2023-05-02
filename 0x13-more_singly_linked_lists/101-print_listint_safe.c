@@ -10,8 +10,8 @@
 
 size_t print_listint_safe(const listint_t *head)
 {
-listint_t *new = NULL;
-listint_t *ne = NULL;
+const listint_t *new = NULL;
+const listint_t *ne = NULL;
 int i, x = 0;
 
 if (head == NULL)
