@@ -14,8 +14,8 @@ size_t x;
 x = 0;
 
 new = *h;
-
-
+if(h == NULL && *h == NULL)
+return (0);
 
 while (new != NULL)
 {
@@ -29,11 +29,8 @@ if (ne < new)
 {
 break;
 }
-if (h == NULL && *h == NULL)
-return (0);
-
 *h = NULL;
 }
-x = malloc(sizeof(listint_t) * x);
+
 return (x);
 }
