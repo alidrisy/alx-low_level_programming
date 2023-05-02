@@ -15,8 +15,7 @@ x = 0;
 
 new = *h;
 
-if (!h)
-return (0);
+
 
 while (new != NULL)
 {
@@ -30,7 +29,10 @@ if (ne < new)
 {
 break;
 }
+if (!h)
+return (0);
+
 *h = NULL;
 }
-return (ne);
+return (x);
 }
