@@ -14,7 +14,7 @@ size_t x;
 x = 0;
 
 new = *h;
-if (h == NULL && *h == NULL)
+if (h == NULL || *h == NULL)
 return (0);
 
 while (new != NULL)
