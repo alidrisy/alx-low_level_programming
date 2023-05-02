@@ -36,6 +36,8 @@ return (x);
 ne = ne->next;
 i++;
 }
+if (head == NULL)
+exit(98);
 }
 return (x);
 }
