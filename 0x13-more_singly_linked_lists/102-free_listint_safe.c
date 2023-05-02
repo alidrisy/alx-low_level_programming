@@ -18,13 +18,13 @@ if (h == NULL)
 return (0);
   
 new = *h;
-while (new)
+while (new != NULL)
 {
 ne = new;
 new = new->next;
 free(ne);
 x++;
-if (new > ne)
+if (ne < new)
 break;
 }
 *h = NULL;
