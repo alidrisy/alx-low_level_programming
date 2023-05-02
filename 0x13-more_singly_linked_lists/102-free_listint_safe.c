@@ -27,8 +27,10 @@ free(ne);
 
 
 if (ne < new)
+{
 break;
 }
 *h = NULL;
+}
 return (x);
 }
