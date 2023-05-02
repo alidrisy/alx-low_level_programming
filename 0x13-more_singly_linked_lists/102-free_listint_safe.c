@@ -8,11 +8,10 @@
 */
 size_t free_listint_safe(listint_t **h)
 {
-listint_t *new = NULL;
-listint_t *ne = NULL;
+listint_t *new;
+listint_t *ne;
 size_t x = 0;
-if (h == NULL)
-return (0);
+
 new = *h;
 while (new != NULL)
 {
