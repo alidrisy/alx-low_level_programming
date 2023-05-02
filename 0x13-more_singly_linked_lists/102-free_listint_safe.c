@@ -13,6 +13,7 @@ listint_t *ne;
 size_t x:
 x = 0;
 new = *h;
+
 if (!h)
 return (0);
 
@@ -22,6 +23,7 @@ ne = new;
 new = new->next;
 free(ne);
 x++;
+
 if (new > ne)
 break;
 }
