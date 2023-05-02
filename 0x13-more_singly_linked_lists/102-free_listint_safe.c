@@ -10,7 +10,7 @@ size_t free_listint_safe(listint_t **h)
 {
 listint_t *new;
 listint_t *ne;
-size_t x;
+int x;
 x = 0;
 
 new = *h;
