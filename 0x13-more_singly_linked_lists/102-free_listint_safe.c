@@ -19,10 +19,11 @@ return (0);
 
 while (new != NULL)
 {
+x++;
 ne = new;
 new = new->next;
 free(ne);
-x++;
+
 if (ne < new)
 break;
 }
