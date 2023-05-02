@@ -10,7 +10,7 @@ size_t free_listint_safe(listint_t **h)
 {
 listint_t *new;
 listint_t *ne;
-size_t x, i;
+size_t x;
 x = 0;
 
 new = *h;
@@ -34,6 +34,6 @@ return (0);
 
 *h = NULL;
 }
-i = malloc(sizeof(listint_t) * x);
-return (i);
+x = malloc(sizeof(listint_t) * x);
+return (x);
 }
