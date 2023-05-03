@@ -22,7 +22,7 @@ while (new != NULL)
 x++;
 ne = new;
 new = ne->next;
-free(new);
+free(ne);
 
 if (ne < new)
 {
