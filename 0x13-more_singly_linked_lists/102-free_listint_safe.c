@@ -24,7 +24,7 @@ ne = new;
 new = ne->next;
 free(ne);
 
-if (ne < new)
+if (ne < new || ne == new)
 {
 break;
 }
