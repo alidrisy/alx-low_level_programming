@@ -10,7 +10,7 @@ size_t free_listint_safe(listint_t **h)
 {
 listint_t *new;
 listint_t *ne;
-size_t x;
+si9ze_t x;
 x = 0;
 
 new = *h;
@@ -28,8 +28,8 @@ if (ne < new || ne == new)
 {
 break;
 }
-*h = NULL;
-}
 
+}
+*h = NULL;
 return (x);
 }
