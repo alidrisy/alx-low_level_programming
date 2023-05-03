@@ -20,10 +20,9 @@ return (0);
 while (new != NULL)
 {
 x++;
-
+ne = new;
 new = ne->next;
 free(new);
-ne = new;
 
 if (ne < new)
 {
