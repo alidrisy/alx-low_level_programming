@@ -21,7 +21,7 @@ while (new != NULL)
 {
 x++;
 
-new = new->next;
+new = ne->next;
 free(new);
 ne = new;
 
