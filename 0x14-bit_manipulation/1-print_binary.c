@@ -9,20 +9,22 @@ void print_binary(unsigned long int n)
 {
 int f = 0;
 int i;
-int x, b;
+int x;
 
 if (n == 0)
 _putchar('0');
 
-for (i = 0; i < 64; i++)
+for (i = 63; i >= 0; i--)
 {
-x = ((1 << (63 - i)) & n);
-if (x >> (63 - i))
+x = (n >> i);
+if (x != 0)
 f = 1;
 if (f != 0)
 {
-b = x >> (63 - i);
-_putchar(b + '0');
+if (x & 1)
+_putchar('1');
+else
+_putchar('0');
 }
 }
 }
