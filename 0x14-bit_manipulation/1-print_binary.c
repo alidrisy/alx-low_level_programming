@@ -17,9 +17,9 @@ _putchar('0');
 for (i = 0; i < 64; i++)
 {
 x = ((1 << (63 - i)) & n);
-if (x >> (63 - i))
+if (x != 0)
 f = 1;
-if (f)
+if (f != 0)
 {
 b = x >> (63 - i);
 _putchar(b + '0');
