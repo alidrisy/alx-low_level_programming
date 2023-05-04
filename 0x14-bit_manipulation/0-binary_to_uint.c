@@ -29,9 +29,9 @@ s = _strlen(b);
 
 for (n = s - 1; n >= 0; n--)
 {
-if (b[n] != 0 && b[n] != 1)
+if (b[n] != '0' && b[n] != '1')
 return (0);
-if (b[n] == 1)
+if (b[n] == '1')
 {
 x += i;
 }
