@@ -1,0 +1,19 @@
+#include "main.h"
+
+/**
+* get_bit - returns the value of a bit at a given index.
+* @n: is anumber
+* @index: is an index
+* Return: the value of the bit at index
+*/
+
+int get_bit(unsigned long int n, unsigned int index)
+{
+if (index > 63)
+return (-1);
+
+unsigned long int i = 0;
+i = (n >> index) & 1;
+
+return (i);
+}
