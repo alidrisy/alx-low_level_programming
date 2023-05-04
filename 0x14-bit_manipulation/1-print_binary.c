@@ -24,6 +24,6 @@ _putchar(b + '0');
 }
 if (n == 0)
 {
-_putchar(n + '0');
+_putchar('0');
 }
 }
