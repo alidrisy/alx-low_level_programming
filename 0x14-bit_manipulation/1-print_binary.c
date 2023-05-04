@@ -9,7 +9,7 @@ void print_binary(unsigned long int n)
 {
 int f = 0;
 int i;
-unsigned long int x, b;
+int x, b;
 
 if (n == 0)
 _putchar('0');
@@ -22,8 +22,8 @@ f = 1;
 if (f != 0)
 {
 b = x >> (63 - i);
-_putchar(b + '0');
 }
+_putchar(b + '0');
 }
 }
 
