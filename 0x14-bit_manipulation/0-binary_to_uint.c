@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include "main.h"
 
-int _strlen(char *c)
+int _strlen(const char *c)
 {
 int i;
 for (i = 0; c[i]; i++)
