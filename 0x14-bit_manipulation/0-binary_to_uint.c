@@ -1,5 +1,13 @@
 #include "main.h"
 
+int _strlen(char *c)
+{
+int i;
+for (i = 0; c[i]; i++)
+;
+return (i);
+}
+
 /**
 * binary_to_uint - converts a binary number to an unsigned int.
 * @b: is pointing to a string of 0 and 1 chars
@@ -16,9 +24,9 @@ unsigned int s;
 if (b == NULL)
 return (0);
 
-s = strlen(b);
+s = _strlen(b);
 
-for (n = s-1; n >= 0; n--)
+for (n = s - 1; n >= 0; n--)
 {
 if (b[n] != 0 && b[n] != 1)
 return (0);
