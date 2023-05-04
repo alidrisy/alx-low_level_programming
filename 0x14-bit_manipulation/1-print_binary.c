@@ -14,16 +14,16 @@ unsigned long int x, b;
 if (n == 0)
 _putchar('0');
 
-for (i = 0; i < 32; i++)
+for (i = 0; i < 64; i++)
 {
-x = ((1 << (31 - i)) & n);
-if (x >> (31 - i))
+x = ((1 << (63 - i)) & n);
+if (x >> (63 - i))
 f = 1;
 if (f)
 {
-b = x >> (31 - i);
-}
-}
+b = x >> (63 - i);
 _putchar(b + '0');
+}
+}
 }
 
