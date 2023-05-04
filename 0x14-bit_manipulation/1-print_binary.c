@@ -11,6 +11,9 @@ int f = 0;
 int i;
 unsigned long int x, b;
 
+if (n == 0)
+_putchar('0');
+
 for (i = 0; i < 32; i++)
 {
 x = ((1 << (31 - i)) & n);
@@ -22,8 +25,5 @@ b = x >> (31 - i);
 _putchar(b + '0');
 }
 }
-if (n == 0)
-{
-_putchar('0');
 }
-}
+
