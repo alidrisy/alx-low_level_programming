@@ -19,11 +19,11 @@ f = 1;
 if (f)
 {
 b = x >> (31 - i);
-printf("%ld", b);
+_putchar(b + '0');
 }
 }
 if (n == 0)
 {
-printf("%ld", n);
+_putchar(n + '0');
 }
 }
