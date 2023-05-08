@@ -12,14 +12,14 @@
 
 void f_close(x, y)
 {
-if(close(x) == -1)
+if (close(x) == -1)
 {
-dprintf(STDERR_FILENO, "Error: Cant close fd %dn, x);
+dprintf(STDERR_FILENO, "Error: Cant close fd %d\n", x);
 exit(100);
 }
-if(close(y) == -1)
+if (close(y) == -1)
 {
-dprintf(STDERR_FILENO, Error: Cant close fd %d\n", y);
+dprintf(STDERR_FILENO, "Error: Cant close fd %d\n", y);
 exit(100);
 }
 }
@@ -47,28 +47,28 @@ c = malloc(1024 * sizeof(char));
 x = open(argc[1], O_RDONLY);
 if (x == -1)
 {
-dprintf(STDERR_FILENO, "Error: Cant read from file %sn, argc[1]);
+dprintf(STDERR_FILENO, "Error: Cant read from file %s\n", argc[1]);
 exit(98);}
 i = open(argc[2], O_WRONLY | O_CREAT | O_TRUNC | O_APPEND, 0664);
 if (i == -1)
 {
-dprintf(STDERR_FILENO, Error: Cant write to %s\n", argc[2]);
+dprintf(STDERR_FILENO, "Error: Cant write to %s\n", argc[2]);
 exit(99);}
 while(v == 1024)
 {
 v = read(x, c, 1024);
 if (v == -1)
 {
-dprintf(STDERR_FILENO, "Error: Cant read from file %sn, argc[1]);
+dprintf(STDERR_FILENO, "Error: Cant read from file %s\n", argc[1]);
 exit(98);}
 
 n = write(i, c, v);
 if (n == -1)
 {
-dprintf(STDERR_FILENO, Error: Cant write to %s\n", argc[2]);
+dprintf(STDERR_FILENO, "Error: Cant write to %s\n", argc[2]);
 exit(99);}
 }
 free(c);
 f_close(x, v);
-return (1);
+return (0);
 }
