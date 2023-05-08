@@ -4,8 +4,8 @@
 * read_textfile - reads a text file and prints it.
 * @filename: pointer to the file.
 * @letters: the number of letters it should read.
- * Return: the number of letters it could read.
- */
+* Return: the number of letters it could read.
+*/
 
 ssize_t read_textfile(const char *filename, size_t letters)
 {
@@ -27,7 +27,7 @@ n = write(STDOUT_FILENO, x, read(i, x, letters));
 if (n == -1)
 return (0);
 
-close (i);
+close(i);
 free(x);
 
 return (n);
