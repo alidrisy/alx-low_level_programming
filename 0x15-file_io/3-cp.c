@@ -1,5 +1,4 @@
-
-
+#include "main.h"
 
 /**
 * f_close - close the files.
