@@ -20,11 +20,11 @@ if (x == NULL)
 return (0);
 
 i = open(filename, O_RDONLY);
-if (i = -1)
+if (i == -1)
 return (0);
 
 n = write(STDOUT_FILENO, x, read(i, x, letters));
-if (n = -1)
+if (n == -1)
 return (0);
 
 close (i);
