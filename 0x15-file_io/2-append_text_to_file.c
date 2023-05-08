@@ -15,7 +15,7 @@ int x, n;
 if (filename == NULL)
 return (-1);
 
-x = open(filename, O_APPEND);
+x = open(filename, O_RDWR | O_APPEND);
 
 if (x == -1)
 return (-1);
@@ -26,9 +26,6 @@ n = write(x, text_content, strlen(text_content));
 if (n == -1)
 return (-1);
 }
-if (text_content == NULL)
-return (1);
-
 close(x);
 
 return (1);
