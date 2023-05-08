@@ -29,39 +29,39 @@ exit(100);
 * Return: 1
 */
 
-int main(int argv, char *argc[])
+int main(int argc, char *argv[])
 {
 int x, i, n;
 ssize_t v = 1024;
 char c[1024];
 
-if (argv != 3)
+if (argc != 3)
 {
 dprintf(STDERR_FILENO, "Usage: cp file_from file_to\n");
 exit(97); }
 
-x = open(argc[1], O_RDONLY);
+x = open(argv[1], O_RDONLY);
 if (x == -1)
 {
-dprintf(STDERR_FILENO, "Error: Cant read from file %s\n", argc[1]);
+dprintf(STDERR_FILENO, "Error: Cant read from file %s\n", argv[1]);
 exit(98); }
-i = open(argc[2], O_WRONLY | O_CREAT | O_TRUNC | O_APPEND, 0664);
+i = open(argc[2], O_RDWR | O_CREAT | O_TRUNC | O_APPEND, 0664);
 if (i == -1)
 {
-dprintf(STDERR_FILENO, "Error: Cant write to %s\n", argc[2]);
+dprintf(STDERR_FILENO, "Error: Cant write to %s\n", argv[2]);
 exit(99); }
 while (v == 1024)
 {
 v = read(x, c, 1024);
 if (v == -1)
 {
-dprintf(STDERR_FILENO, "Error: Cant read from file %s\n", argc[1]);
+dprintf(STDERR_FILENO, "Error: Cant read from file %s\n", argv[1]);
 exit(98); }
 
 n = write(i, c, v);
 if (n == -1)
 {
-dprintf(STDERR_FILENO, "Error: Cant write to %s\n", argc[2]);
+dprintf(STDERR_FILENO, "Error: Cant write to %s\n", argv[2]);
 exit(99); }
 }
 
