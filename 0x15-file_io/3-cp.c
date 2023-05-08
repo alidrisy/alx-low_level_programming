@@ -14,7 +14,7 @@ dprintf(STDERR_FILENO, "Error: Cant close fd %d\n", x);
 exit(100);
 }
 
-if (close(y) == -1)
+if (close(i) == -1)
 {
 dprintf(STDERR_FILENO, "Error: Cant close fd %d\n", i);
 exit(100);
