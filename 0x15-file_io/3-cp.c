@@ -10,7 +10,7 @@
 * @y: the value of the file descriptor.
 */
 
-void f_close(x, y)
+void f_close(int x, int y)
 {
 if (close(x) == -1)
 {
