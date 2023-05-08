@@ -6,7 +6,7 @@
 * @y: the value of the file descriptor.
 */
 
-void f_close(int x, int y)
+void f_close(int x, int i)
 {
 if (close(x) == -1)
 {
@@ -16,7 +16,7 @@ exit(100);
 
 if (close(y) == -1)
 {
-dprintf(STDERR_FILENO, "Error: Cant close fd %d\n", y);
+dprintf(STDERR_FILENO, "Error: Cant close fd %d\n", i);
 exit(100);
 }
 
@@ -65,6 +65,6 @@ dprintf(STDERR_FILENO, "Error: Cant write to %s\n", argc[2]);
 exit(99); }
 }
 
-f_close(x, v);
+f_close(x, i);
 return (0);
 }
