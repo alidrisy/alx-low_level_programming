@@ -31,8 +31,8 @@ exit(100);
 
 int main(int argc, char *argv[])
 {
-int x, i, n;
-ssize_t v = 1024;
+int x, i;
+ssize_t v = 1024, n;
 char c[1024];
 
 if (argc != 3)
