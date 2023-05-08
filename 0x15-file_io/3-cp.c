@@ -37,14 +37,12 @@ int main(int argv, char *argc[])
 {
 int x, i, n;
 ssize_t v = 1024;
-char *c;
+char c[1024];
 
 if (argv != 3)
 {
 dprintf(STDERR_FILENO, "Usage: cp file_from file_to\n");
 exit(97); }
-
-c = malloc(1024 * sizeof(char));
 
 x = open(argc[1], O_RDONLY);
 if (x == -1)
