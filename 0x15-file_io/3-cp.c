@@ -3,7 +3,7 @@
 /**
 * f_close - close the files.
 * @x: the value of the file descriptor.
-* @y: the value of the file descriptor.
+* @i: the value of the file descriptor.
 */
 
 void f_close(int x, int i)
