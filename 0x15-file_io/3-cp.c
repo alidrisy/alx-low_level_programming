@@ -45,7 +45,7 @@ if (x == -1)
 {
 dprintf(STDERR_FILENO, "Error: Cant read from file %s\n", argv[1]);
 exit(98); }
-i = open(argc[2], O_RDWR | O_CREAT | O_TRUNC | O_APPEND, 0664);
+i = open(argv[2], O_RDWR | O_CREAT | O_TRUNC | O_APPEND, 0664);
 if (i == -1)
 {
 dprintf(STDERR_FILENO, "Error: Cant write to %s\n", argv[2]);
