@@ -26,6 +26,9 @@ n = write(x, text_content, strlen(text_content));
 if (n == -1)
 return (-1);
 }
+else
+return(1);
+
 close(x);
 
 return (1);
