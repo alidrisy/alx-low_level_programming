@@ -56,7 +56,7 @@ if (i == -1)
 {
 dprintf(STDERR_FILENO, "Error: Cant write to %s\n", argc[2]);
 exit(99); }
-while(v == 1024)
+while (v == 1024)
 {
 v = read(x, c, 1024);
 if (v == -1)
