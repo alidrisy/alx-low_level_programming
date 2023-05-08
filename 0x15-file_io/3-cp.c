@@ -17,13 +17,13 @@ if (close(x) == -1)
 dprintf(STDERR_FILENO, "Error: Cant close fd %d\n", x);
 exit(100);
 }
-close(x);
+
 if (close(y) == -1)
 {
 dprintf(STDERR_FILENO, "Error: Cant close fd %d\n", y);
 exit(100);
 }
-close(y);
+
 }
 
 /**
@@ -70,7 +70,7 @@ if (n == -1)
 dprintf(STDERR_FILENO, "Error: Cant write to %s\n", argc[2]);
 exit(99); }
 }
-free(c);
+
 f_close(x, v);
 return (0);
 }
