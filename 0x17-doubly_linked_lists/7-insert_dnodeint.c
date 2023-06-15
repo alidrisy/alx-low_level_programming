@@ -42,10 +42,11 @@ if (x == idx - 1)
 new->next = ne->next;
 ne->next = new;
 new->prev = ne;
+return (new);
 }
 ne = ne->next;
 x++;
 }
 }
-return (new);
+return (NULL);
 }
