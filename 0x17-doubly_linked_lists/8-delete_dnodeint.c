@@ -29,9 +29,12 @@ while (new != NULL)
 {
 if (x == index)
 {
+if (new->next != NULL)
+{
 new->next = new->next->next;
 free(new);
 return (1);
+}
 }
 new = new->next;
 x++;
