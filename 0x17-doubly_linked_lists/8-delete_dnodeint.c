@@ -3,7 +3,7 @@
 /**
 * delete_dnodeint_at_index - deletes the node at index index
 * @head: a pointer to link list
-* @idx: is the index where the new node will delete
+* @index: is the index where the new node will delete
 * Return: 1 or -1
 */
 
@@ -12,7 +12,7 @@ int delete_dnodeint_at_index(dlistint_t **head, unsigned int index)
 dlistint_t *new;
 unsigned int x = 1;
 
-if (*head == NULL)
+if (*head == NULL || head == NULL)
 return (-1);
 
 new = *head;
