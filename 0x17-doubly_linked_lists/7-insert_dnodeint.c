@@ -17,27 +17,23 @@ unsigned int i = 0;
 new = malloc(sizeof(dlistint_t));
 if (new == NULL)
 return (NULL);
-
 new->n = n;
 if (new == 0)
 return (NULL);
-
 if (idx == 0)
 {
 new = add_dnodeint(h, n);
-return (new);
-}
+return (new); }
+
 ne = *h;
 while (ne != NULL)
 {
 ne = ne->next;
-i++;
-}
+i++; }
 if (idx == i)
 {
 new = add_dnodeint_end(h, n);
-return (new);
-}
+return (new); }
 
 ne = *h;
 while (ne != NULL)
@@ -48,10 +44,8 @@ new->prev = ne->prev;
 new->next = ne;
 ne->prev->next = new;
 ne->prev = new;
-return (new);
-}
+return (new); }
 ne = ne->next;
-x++;
-}
+x++; }
 return (NULL);
 }
