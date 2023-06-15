@@ -37,11 +37,12 @@ else
 ne = *h;
 while (ne != NULL)
 {
-if (x == idx - 1)
+if (x == idx)
 {
-new->next = ne->next;
-ne->next = new;
-new->prev = ne;
+new->prev = ne->prev;
+new->next = ne;
+ne->prev->next = new;
+ne->prev = new;
 return (new);
 }
 ne = ne->next;
