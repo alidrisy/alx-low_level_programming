@@ -13,7 +13,7 @@ dlistint_t *new;
 unsigned int x = 0;
 
 new = *head;
-if (*head == NULL || index > dlistint_len(new))
+if (*head == NULL)
 return (-1);
 
 if (index == 0 && new->next)
