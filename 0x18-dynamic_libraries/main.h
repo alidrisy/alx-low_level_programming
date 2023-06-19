@@ -1,5 +1,5 @@
-#ifndef MAIN_H
-#define MAIN_H
+#ifndef DYNAMIC_LIB
+#define DYNAMIC_LIB
 
 #include <stdio.h>
 #include <stdlib.h>
