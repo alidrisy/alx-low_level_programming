@@ -10,8 +10,6 @@
 
 int hash_table_set(hash_table_t *ht, const char *key, const char *value)
 {
-	int hash_table_set(hash_table_t *ht, const char *key, const char *value)
-{
 	unsigned long int idx, i;
 	char *str_v;
 	hash_node_t *new;
