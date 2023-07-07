@@ -21,7 +21,7 @@ void hash_table_delete(hash_table_t *ht)
 			free(new);
 			new = ne;
 		}
-		ht->array[i] = NULL;
+		free(ht->array[i]);
 		free(ht->array);
 	}
 	free(ht);
