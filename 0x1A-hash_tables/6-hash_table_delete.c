@@ -20,9 +20,12 @@ void hash_table_delete(hash_table_t *ht)
 			free(new->value);
 			free(new);
 			new = ne;
+		}
+		if (ht->array[i] != NULL)
+		{
+			ht->array[i] = NULL;
 			free(ht->array);
 		}
-		ht->array[i] = NULL;
 	}
 	free(ht->array);
 	free(ht);
