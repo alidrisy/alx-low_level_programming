@@ -16,6 +16,10 @@ char *hash_table_get(const hash_table_t *ht, const char *key)
 		return (NULL);
 
 	indx = key_index((const unsigned char *)key, ht->size);
+
+	if (indx > ht->size)
+		return (NULL);
+
 	for (i = indx; ht->array[i]; i++)
 	{
 		if (strcmp(ht->array[i]->key, key) == 0)
