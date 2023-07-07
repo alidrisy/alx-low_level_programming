@@ -22,7 +22,7 @@ void hash_table_delete(hash_table_t *ht)
 			new = ne;
 		}
 		ht->array[i] = NULL;
-		free(ht->array);
 	}
+	free(ht->array);
 	free(ht);
 }
