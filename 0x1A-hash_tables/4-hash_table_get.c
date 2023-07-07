@@ -19,12 +19,15 @@ char *hash_table_get(const hash_table_t *ht, const char *key)
 
 	if (ht->array[indx] == NULL)
 		return (NULL);
-
-	for (i = indx; ht->array[i]; i++)
+	
+	if (ht->array[indx] != NULL)
 	{
-		if (strcmp(ht->array[i]->key, key) == 0)
+		for (i = indx; ht->array[i]; i++)
 		{
-			return (ht->array[i]->value);
+			if (strcmp(ht->array[i]->key, key) == 0)
+			{
+				return (ht->array[i]->value);
+			}
 		}
 	}
 	return (NULL);
