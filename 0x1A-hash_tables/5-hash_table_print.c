@@ -21,6 +21,7 @@ while(ht->array[i] != NULL)
 printf("'%s': '%s'", ht->array[i]->key, ht->array[i]->value);
 if (ht->array[i]->next != NULL)
 printf(", ");
+
 ht->array[i] = ht->array[i]->next;
 x++;
 }
