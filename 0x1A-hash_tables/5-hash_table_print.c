@@ -12,11 +12,11 @@ int x = 0;
 
 if (ht == NULL)
 return;
-	
+
 printf("{");
 for (i = 0; i < ht->size; i++)
 {
-while(ht->array[i] != NULL)
+while (ht->array[i] != NULL)
 {
 printf("'%s': '%s'", ht->array[i]->key, ht->array[i]->value);
 if (ht->array[i]->next != NULL)
