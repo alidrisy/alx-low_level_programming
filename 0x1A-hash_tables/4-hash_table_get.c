@@ -12,12 +12,12 @@ char *hash_table_get(const hash_table_t *ht, const char *key)
 {
 	unsigned long int indx, i;
 
-	if (key == NULL || ht == NULL)
+	if (key == NULL || ht == NULL || strcmp(key, "") == 0)
 		return (NULL);
 
 	indx = key_index((const unsigned char *)key, ht->size);
 
-	if (indx > ht->size || indx == 0)
+	if (indx > ht->size)
 		return (NULL);
 
 	for (i = indx; ht->array[i]; i++)
