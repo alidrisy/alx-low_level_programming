@@ -12,7 +12,7 @@ char *hash_table_get(const hash_table_t *ht, const char *key)
 {
 	unsigned long int indx, i;
 
-	if (key == NULL || ht == NULL || strcmp(key, "") == 0)
+	if (ht == NULL || strlen(key) == 0)
 		return (NULL);
 
 	indx = key_index((const unsigned char *)key, ht->size);
@@ -20,15 +20,13 @@ char *hash_table_get(const hash_table_t *ht, const char *key)
 	if (ht->array[indx] == NULL)
 		return (NULL);
 	
-	if (ht->array[indx] != NULL)
+	while (ht->array[indx] != NULL)
 	{
-		for (i = indx; ht->array[i]; i++)
+		if (strcmp(ht->array[i]->key, key) == 0)
 		{
-			if (strcmp(ht->array[i]->key, key) == 0)
-			{
-				return (ht->array[i]->value);
-			}
+			return (ht->array[i]->value);
 		}
+		ht->array[indx] = ht->array[indx]->next;
 	}
 	return (NULL);
 }
