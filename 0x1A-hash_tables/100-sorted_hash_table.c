@@ -40,28 +40,27 @@ shash_table_t *shash_table_create(unsigned long int size)
 * Return: 1 if it succeeded, 0 otherwise
 */
 
-int shash_table_set(shash_table_t *sht, const char *key, const char *value)
+int shash_table_set(shash_table_t *ht, const char *key, const char *value)
 {
         unsigned long int idx;
-        char *str_v;
         shash_node_t *new, *ne = NULL;
 
-        if (key == NULL || sht == NULL || value == NULL)
+        if (key == NULL || ht == NULL || value == NULL)
                 return (0);
 
         
-        idx = key_index((const unsigned char*)key, sht->size);
+        idx = key_index((const unsigned char*)key, ht->size);
 
-        str_v = strdup(value);
-        if (str_v == NULL)
+        value = strdup(value);
+        if (value == NULL)
                 return (0);
-	ne = sht->shead;
+	ne = ht->shead;
         while (ne != NULL)
         {
                 if (strcmp(ne->key, key) == 0)
                 {
                         free(ne->value);
-			ne->value = str_v;
+			ne->value = value;
                         return (1);
                 }
 		ne = ne->snext;
@@ -77,33 +76,33 @@ int shash_table_set(shash_table_t *sht, const char *key, const char *value)
                 return (0);
         }
 
-        new->value = str_v;
-        new->next = sht->array[idx];
-        sht->array[idx] = new;
+        new->value = value;
+        new->next = ht->array[idx];
+        ht->array[idx] = new;
 
-	if (sht->shead == NULL)
+	if (ht->shead == NULL)
 	{
 		new->sprev = NULL;
 		new->snext = NULL;
-		sht->shead = new;
-		sht->stail = new;
+		ht->shead = new;
+		ht->stail = new;
 	}
-	else if (strcmp(sht->shead->key, key) < 0)
+	else if (strcmp(ht->shead->key, key) < 0)
 	{
 		new->sprev = NULL;
-		new->snext = sht->shead;
-		sht->shead->sprev = new;
-		sht->shead = new;
+		new->snext = ht->shead;
+		ht->shead->sprev = new;
+		ht->shead = new;
 	}
 	else
 	{
-		ne = sht->shead;
+		ne = ht->shead;
 		while (ne->snext != NULL && strcmp(ne->key, key) < 0)
 			ne = ne->snext;
 		new->sprev = ne;
 		new->snext = ne->snext;
 		if (ne->snext == NULL)
-			sht->stail = new;
+			ht->stail = new;
 		else
 			ne->snext->sprev = new;
 		ne->snext = new;
@@ -122,23 +121,19 @@ int shash_table_set(shash_table_t *sht, const char *key, const char *value)
 
 char *shash_table_get(const shash_table_t *ht, const char *key)
 {
-        unsigned long int indx;
+	shash_table_t *new = NULL;
 
         if (ht == NULL || strlen(key) == 0)
                 return (NULL);
 
-        indx = key_index((const unsigned char *)key, ht->size);
-
-        if (ht->array[indx] == NULL)
-                return (NULL);
-
-        while (ht->array[indx] != NULL)
+	new = ht->shead;
+        while (new != NULL)
         {
-                if (strcmp(ht->array[indx]->key, key) == 0)
+                if (strcmp(new->key, key) == 0)
                 {
-                        return (ht->array[indx]->value);
+                        return (new->value);
                 }
-                ht->array[indx] = ht->array[indx]->next;
+                new = new->snext;
         }
         return (NULL);
 }
