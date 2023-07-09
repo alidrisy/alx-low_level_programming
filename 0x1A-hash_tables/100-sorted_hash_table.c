@@ -40,30 +40,31 @@ shash_table_t *shash_table_create(unsigned long int size)
 * Return: 1 if it succeeded, 0 otherwise
 */
 
-int shash_table_set(shash_table_t *ht, const char *key, const char *value)
+int shash_table_set(shash_table_t *sht, const char *key, const char *value)
 {
-        unsigned long int idx, i;
+        unsigned long int idx;
         char *str_v;
-        shash_node_t *new;
+        shash_node_t *new, *ne;
 
-        if (key == NULL || ht == NULL || value == NULL)
+        if (key == NULL || sht == NULL || value == NULL)
                 return (0);
 
-        i = 0;
-        idx = key_index((const unsigned char *)key, ht->size);
+        
+        idx = key_index((const unsigned char*)key, sht->size);
 
         str_v = strdup(value);
         if (str_v == NULL)
                 return (0);
-
-        for (i = idx; ht->array[i]; i++)
+	ne = sht->shead;
+        while (ne)
         {
-                if (strcmp(ht->array[i]->key, key) == 0)
+                if (strcmp(ne->key, key) == 0)
                 {
-                        free(ht->array[i]->value);
-                        ht->array[i]->value = str_v;
+                        free(ne->value);
+			ne->value = str_v;
                         return (1);
                 }
+		ne = ne->snext;
         }
         new = malloc(sizeof(shash_node_t));
         if (new == NULL)
@@ -77,9 +78,36 @@ int shash_table_set(shash_table_t *ht, const char *key, const char *value)
         }
 
         new->value = str_v;
-        new->next = ht->array[idx];
-        ht->array[idx] = new;
+        new->next = sht->array[idx];
+        sht->array[idx] = new;
 
+	if (sht->shead == NULL)
+	{
+		new->sprev = NULL;
+		new->snext = NULL;
+		sht->shead = new;
+		sht->stail = new;
+	}
+	else if (strcmp(sht->shead->key, key) < 0)
+	{
+		new->sprev = NULL;
+		new->snext = sht->shead;
+		sht->shead->sprev = new;
+		sht->shead = new;
+	}
+	else
+	{
+		ne = sht->shead;
+		while(ne->snext != NULL && strcmp(ne->key, key) < 0)
+			ne = ne->snext;
+		new->sprev = ne;
+		new->snext = ne->snext;
+		if (ne->snext == NULL)
+			sht->stail = new;
+		else
+			ne->snext->sprev = new;
+		ne->snext = new;
+	}
         return (1);
 }
 
@@ -122,27 +150,21 @@ char *shash_table_get(const shash_table_t *ht, const char *key)
 * @ht: the hash table you want to add or update the key/value to
 */
 
-void shash_table_print(const shash_table_t *ht)
+void shash_table_print(const shash_table_t *sht)
 {
-unsigned long int i;
-int x = 0;
+shash_node_t *new;
 
-if (ht == NULL)
+if (sht == NULL)
 return;
-
+new = sht->shead;
 printf("{");
-for (i = 0; i < ht->size; i++)
+while (new != NULL)
 {
-if (ht->array[i] != NULL)
-{
-printf("'%s': '%s'", ht->array[i]->key, ht->array[i]->value);
-if (ht->array[i]->next != NULL)
+printf("'%s': '%s'", new->key, new->value);
+if (new->snext != NULL)
 printf(", ");
 
-x++;
-}
-if (ht->array[i + 1] != NULL && x)
-printf(", ");
+new = new->snext;
 }
 printf("}\n");
 }
@@ -152,30 +174,26 @@ printf("}\n");
 * @ht: the hash table you want to add or update the key/value to
 */
 
-void shash_table_print_rev(const shash_table_t *ht)
+void shash_table_print_rev(const shash_table_t *sht)
 {
-unsigned long int i;
-int x = 0;
+shash_node_t *new;
 
-if (ht == NULL)
+if (sht == NULL)
 return;
 
 printf("{");
-for (i = ht->size; i > 0; i--)
+new = sht->stail;
+while (new != NULL)
 {
-if (ht->array[i] != NULL)
-{
-printf("'%s': '%s'", ht->array[i]->key, ht->array[i]->value);
-if (ht->array[i]->next != NULL)
+printf("'%s': '%s'", new->key, new->value);
+if (new->sprev != NULL)
 printf(", ");
 
-x++;
-}
-if (ht->array[i - 1] != NULL && x)
-printf(", ");
+new = new->sprev;
 }
 printf("}\n");
 }
+
 
 
 
