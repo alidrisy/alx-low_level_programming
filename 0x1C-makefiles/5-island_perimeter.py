@@ -22,7 +22,5 @@ def island_perimeter(grid):
         elif n > 1:
             if n > y:
                 y = n
-                x += 1
-                continue
-            x += 2
+            x += 1
     return (x * 2) + (y * 2)
