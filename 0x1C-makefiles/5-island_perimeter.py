@@ -25,8 +25,8 @@ def island_perimeter(grid):
                 y = n
             if li[i] == 1 and li[i+1] == 1 and n == 2:
                 x += 1
-            if li[i] == 1 and li[i+1] == 0 and n == 2:
+            if li[i] == 1 and li[i+1] == 0 and n == 2 and n < y:
                 x += 2
-            if li[i] == 1 and li[i+1] == 1 and n > 2:
+            if li[i] == 1 and li[i+1] == 1 and n > 2 and n < y:
                 x += 2
     return (x * 2) + (y * 2)
