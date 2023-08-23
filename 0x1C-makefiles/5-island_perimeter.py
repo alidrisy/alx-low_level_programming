@@ -16,9 +16,6 @@ def island_perimeter(grid):
             if i == li.index(1) or i == 0:
                 x += 1
                 i = li.index(1)
-            else:
-                i = 0
-                x += 2
         elif n > 1:
             if n > y:
                 y = n
