@@ -5,19 +5,18 @@
 def island_perimeter(grid):
     """Returns the perimeter of the island described in grid"""
     x = 0
-    n = 0
-    i = 0
-    y = 0
-    if grid == []:
-        return 0
-    for li in grid:
-        n = li.count(1)
-        if n == 1:
-            if i == li.index(1) or i == 0:
-                x += 1
-                i = li.index(1)
-        elif n > 1:
-            if n > y:
-                y = n
-            x += 1
-    return (x * 2) + (y * 2)
+    row = len(grid)
+    colm = len(grid[0])
+    for i in range(row):
+        for n in range(colm):
+            if grid[i][n] == 1:
+                if i == 0 or grid[i - 1][n] == 0:
+                    x += 1
+                if (i + 1) == row or grid[i + 1][n] == 0:
+                    x += 1
+                if n == 0 or grid[i][n - 1] == 0:
+                    x += 1
+                if (n + 1) == colm or grid[i][n + 1] == 0:
+                    x += 1
+
+    return x
