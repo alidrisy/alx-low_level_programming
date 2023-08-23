@@ -20,13 +20,9 @@ def island_perimeter(grid):
                 i = 0
                 x += 2
         elif n > 1:
-            i = li.index(1)
             if n > y:
                 y = n
-            if li[i] == 1 and li[i+1] == 1 and n == 2:
                 x += 1
-            if li[i] == 1 and li[i+1] == 0 and n == 2:
-                x += 1
-            if li[i] == 1 and li[i+1] == 1 and n > 2:
-                x += 1
+                continue
+            x += 2
     return (x * 2) + (y * 2)
