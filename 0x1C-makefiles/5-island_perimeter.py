@@ -8,6 +8,8 @@ def island_perimeter(grid):
     n = 0
     i = 0
     y = 0
+    if grid == []:
+        return 0
     for li in grid:
         n = li.count(1)
         if n:
